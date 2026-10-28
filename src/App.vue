@@ -16,7 +16,7 @@ const activeAnchor = ref('')
 const englishIntro = [
   'SurfX proposes to connect mobile games, utility apps, and tools for user-directed stock and crypto system trading through one account and a shared token. The whitepaper sets out common payment and settlement rules for users, developers, and creators.',
   'SURFX is proposed as a BEP-20 utility token on BNB Smart Chain. App-specific scores and points remain tied to their services; only approved uses and conversions would follow published terms.',
-  'This is a planning document, version 0.2. Service launches, token issuance, contract deployment, funding, audits, and official support details require separate confirmation and disclosure.',
+  'This is a planning document, version 0.2. Service launches, token issuance, contract deployment, funding, audits, and Telegram or WhatsApp channels require separate confirmation and disclosure.',
 ]
 
 function readPageId() {
@@ -158,7 +158,7 @@ onUnmounted(() => {
 
         <footer class="article-footer">
           <img :src="asset('surfx-neocode-collab.png')" alt="SurfX × NEOCODE" />
-          <div class="footer-details"><strong>NEOCODE</strong><span>Representative: Eunseong Park · Business Registration No. 422-29-01059</span><span>E-Commerce Registration No. 2025-Seoul Guro-0315 · D-U-N-S No. 963437563</span><span>Suite 702, 36, Gyeongin-ro 20na-gil, Guro-gu, Seoul, Republic of Korea</span><span>Customer Support: <a href="tel:+821086741663">010-8674-1663</a></span></div>
+          <div class="footer-details"><strong>Neocode</strong><span>Business Type: Company · Representative: Eunseong Park · Business Registration No. 422-29-01059</span><span>E-Commerce Registration No. 2025-Seoul Guro-0315 · D-U-N-S No. 963437563</span><span>Suite 702, 36, Gyeongin-ro 20na-gil, Guro-gu, Seoul, Republic of Korea</span><span>Email: <a href="mailto:neocode.kr@gmail.com">neocode.kr@gmail.com</a> · Customer Support: <a href="tel:+821086741663">010-8674-1663</a></span></div>
           <div class="footer-bottom"><span>© 2026 SurfX × NEOCODE</span><a href="https://www.surfx-protocol.com/">{{ lang === 'ko' ? 'SurfX 메인 사이트' : 'SurfX main site' }} ↗</a></div>
         </footer>
       </main>
