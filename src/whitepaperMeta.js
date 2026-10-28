@@ -3,7 +3,7 @@ export const groups = [
   { id: 'ecosystem', icon: '∿', en: 'ECOSYSTEM', ko: '생태계', chapters: [5, 6, 7, 8] },
   { id: 'utility', icon: '▧', en: 'UTILITY & TRADING', ko: '사용처와 트레이딩', chapters: [9, 10, 11, 12, 13, 14] },
   { id: 'token', icon: '◇', en: 'TOKEN & OPERATIONS', ko: '토큰과 운영', chapters: [15, 16, 17, 18, 19, 20] },
-  { id: 'delivery', icon: '↗', en: 'DELIVERY & DISCLOSURE', ko: '개발과 공개', chapters: [21, 22, 23, 24, 25] },
+  { id: 'delivery', icon: '↗', en: 'DELIVERY & DISCLOSURE', ko: '개발과 공개', chapters: [21, 22, 23, 24] },
 ]
 
 export const chapterMeta = [
