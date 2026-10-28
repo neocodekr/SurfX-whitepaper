@@ -1,0 +1,1514 @@
+{
+  "introduction": [
+    "SurfX connects mobile games, utility apps, and stock and coin system trading tools to users around the world with one account and common token. The purpose of this white paper is to place waves and surfing at the center of the brand and connect payments and settlements of users, developers, and creators with common rules.",
+    "SurfX uses BNB Smart Chain and proposes SURFX as a BEP-20 shared utility token. Each app retains its own scores and points for its specific purpose; only approved uses and digital items are connected under published terms.",
+    "The representative is responsible for operations. Telegram, WhatsApp, and email are planned support channels. Individual services will be announced when their details are finalized. Token supply, security, digital items, and operating resources remain planning standards. The representative, business information, and official email appear in this document; Telegram and WhatsApp channels will be published after they are established."
+  ],
+  "chapters": [
+    {
+      "id": "chapter-01",
+      "title": "01 Project Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SurfX aims to create an ecosystem that connects mobile games, utility apps, digital content, and stock/coin system trading tools to users around the world through a single account and a common token. Users can use the functions and products supported by connected services with the same token, and developers and creators can participate in a common payment, compensation, and settlement system."
+        },
+        {
+          "type": "paragraph",
+          "text": "SurfX Token is the public utility token of this ecosystem. In this design, the token symbol is tentatively named SURFX, and BNB Smart Chain's BEP-20 standard is adopted as the first issuing chain. It is not a native coin of its own mainnet, but a token issued on an existing blockchain, and its role is distinct from BNB, a network fee asset."
+        },
+        {
+          "type": "paragraph",
+          "text": "SurfX's goal is to ensure that its systems and content sequentially support the same token usage interface. Users use supported game content, app features, creative works, and membership with SURFX, and approved rewards are managed in a common account. The actual payment and conversion range is specified according to the policy for each service, product, country, and app distribution route."
+        },
+        {
+          "type": "paragraph",
+          "text": "SurfX's growth is evaluated through the quality of services that users repeatedly seek, the experience of using multiple apps, and the actual settlement value returned to developers rather than the increase in new token buyers. Expanding the number of uses increases the reasons to use the token, but does not guarantee token price or market liquidity."
+        },
+        {
+          "type": "paragraph",
+          "text": "This document is white paper v0.2 that reflects the operating policy. Representative operation, Telegram, WhatsApp, and email support, and global market orientation are specified as the basic directions of the project. Individual launch services are organized and made public, and token supply, distribution, contracts, goods, and financial resources items are standards for preparing for issuance. The completion of actual distribution, securing of funds, audit, or contract conclusion will be confirmed through separate disclosure."
+        }
+      ]
+    },
+    {
+      "id": "chapter-02",
+      "title": "02 A brand that connects with waves and surfing",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Waves symbolize new experiences that constantly arrive. Surfing is the act of choosing one experience, enjoying it, and moving on to the next experience. SurfX is designed to connect scattered digital activities such as playing a game, creating an image, using small tools in daily life, and sharing creative works into one flow."
+        },
+        {
+          "type": "paragraph",
+          "text": "Even if one game ends, the user's account, accumulated history, and supporting assets must be able to be used again in the next service. SurfX aims for an environment where users can move between services as if riding waves, while maintaining their experience and usage rights. This connection is implemented through the contract and interface of the actually linked service."
+        },
+        {
+          "type": "paragraph",
+          "text": "The visual language of surfing and the ocean serves as a common identity for mobile games, seasonal content, avatars, and community experiences. However, the scope of the ecosystem is not limited to surfing games. The long-term direction is to connect photo and video tools, productivity apps, creative tools, and partner services through the same account and payment system."
+        }
+      ]
+    },
+    {
+      "id": "chapter-03",
+      "title": "03 Operating entity and official support channel",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The person responsible for operating SurfX is its representative. The representative is ultimately responsible for service planning and launch, financial execution, token operation policy, user support, and incident response. Do not list a non-existent board of directors, foundation, full-time development team, or independent approval organization as the operating entity."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "item",
+              "operational information"
+            ],
+            [
+              "operating mode",
+              "Company"
+            ],
+            [
+              "Company name and business information",
+              "Neocode · Business registration number 422-29-01059"
+            ],
+            [
+              "representative",
+              "Eunseong Park"
+            ],
+            [
+              "target market",
+              "Worldwide"
+            ],
+            [
+              "Telegram",
+              ""
+            ],
+            [
+              "WhatsApp",
+              ""
+            ],
+            [
+              "email",
+              "neocode.kr@gmail.com"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Telegram is planned for announcements and community information, WhatsApp for individual support inquiries, and email for settlement, refunds, security reports, and other inquiries requiring an official record. Where possible, inquiries from all channels will be managed in a single support log, with their status and outcomes communicated. Operating hours, supported languages, and expected response times will be published when the channels open."
+        },
+        {
+          "type": "paragraph",
+          "text": "Telegram and WhatsApp accounts and addresses will be listed consistently in a revised whitepaper and official notices after they are established and verified. Blank fields do not indicate active contact channels. The official inquiry email is neocode.kr@gmail.com. The representative and official support staff will never ask users for private keys or wallet recovery phrases. Users will not be asked to submit sensitive personal information in public communities."
+        },
+        {
+          "type": "paragraph",
+          "text": "Development, security review, design, and legal and accounting tasks can be outsourced to external experts when necessary. The scope of consignment, payment conditions, and access rights are set according to the actual contract, and management responsibility is handled by the representative. External consultation or review is disclosed as a relevant role only after the contract has been concluded and performance has been confirmed."
+        },
+        {
+          "type": "paragraph",
+          "text": "In preparation for the absence of a representative, document the management account list, key recovery procedures, server/domain update information, and emergency notification procedures. If a replacement officer or recovery trustee is appointed, the actual designation and scope of authority are disclosed. There is no indication that an independent alternative operator exists until designated."
+        }
+      ]
+    },
+    {
+      "id": "chapter-04",
+      "title": "04 Global market and service provision policy",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SurfX's target market is global and not limited to specific countries. Based on common accounts and token usage specifications, we prepare services in which users and developers from various countries can participate. Global orientation does not mean that all token features are approved for offer or sale in all countries."
+        },
+        {
+          "type": "paragraph",
+          "text": "General app use, wallet connection, token payment, token payment, and external transfer are divided into different functions. The scope of actual public services by country, age, and distribution route is managed through a list of functions, and the functions that meet the necessary conditions are activated first. If a specific function cannot be provided due to applicable laws or store policies, the scope will be informed before use."
+        },
+        {
+          "type": "paragraph",
+          "text": "For service guidance for the global market, Korean and English will be reviewed first, and supported languages ​​will be expanded according to demand and operational capacity. The price, product quantity, token payment quantity, commission, and refund conditions are displayed so that users can distinguish them. Transaction time standards and customer support operating hours are also specified."
+        },
+        {
+          "type": "paragraph",
+          "text": "The release country and distribution channel are reflected in the public list for each service. We do not make it a global operating principle to provide token functions that are restricted in certain regions through other distribution methods. In the event of a service interruption or change in the scope of support, the method of processing already confirmed usage rights and settlement obligations will be notified."
+        }
+      ]
+    },
+    {
+      "id": "chapter-05",
+      "title": "05 Problem you want to solve",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Disconnected goods and usage experiences for each service"
+        },
+        {
+          "type": "paragraph",
+          "text": "If it is difficult to know what rights points or vouchers from one app have in another app, users must manage balance and payment conditions separately for each service. The problem that SurfX aims to solve is this management burden. It provides a common wallet, product list, and clear conversion rules to make it easier to identify available goods."
+        },
+        {
+          "type": "heading",
+          "text": "Complexity of the blockchain use process"
+        },
+        {
+          "type": "paragraph",
+          "text": "When wallet creation, key storage, chain selection, fee preparation, and signature requests are concentrated on the first use, the original purpose of games and apps is obscured. SurfX proposes a method that allows general functions to be used first by logging into an account, and guides users step by step through the necessary procedures when holding or transferring on-chain assets."
+        },
+        {
+          "type": "heading",
+          "text": "Compensation structure where the payment amount grows before the usage"
+        },
+        {
+          "type": "paragraph",
+          "text": "If there is not enough content and services that users want to purchase compared to the speed at which rewards increase, the cost and sales burden of the reward program may increase. SurfX manages payment budget, actual service consumption, and operating cash flow together. We do not default to a design that creates an obligation to pay unlimited tokens solely through repeated participation."
+        },
+        {
+          "type": "heading",
+          "text": "Connection costs between developers and creators"
+        },
+        {
+          "type": "paragraph",
+          "text": "If accounts, wallets, payments, compensation verification, and settlement are built separately for each service, the integration burden on a small team increases. SurfX Connect aims to provide these functions in a common interface. Developers can focus on the games and apps they are good at, and ecosystem integration can be implemented by following documented rules."
+        },
+        {
+          "type": "heading",
+          "text": "Problems that cannot be solved with blockchain alone"
+        },
+        {
+          "type": "paragraph",
+          "text": "Blockchain helps verify confirmed token transactions and contract status, but it does not automatically determine whether game scores are legitimate, ad engagement is real human behavior, or content copyright is legitimate. SurfX has separate operational responsibilities for server verification, fraud detection, dispute resolution, and personal information protection."
+        }
+      ]
+    },
+    {
+      "id": "chapter-06",
+      "title": "06 Why you need SurfX tokens",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The function of one operator paying points in a single app can also be implemented with a general database. The reason SurfX uses tokens is to allow independent services, user wallets, creators, and partners to check transaction, reward, and settlement details based on common assets. If there is no demand for external service connection or asset transfer, the initial points are sufficient, so token issuance is carried out after confirming the actual connection demand."
+        },
+        {
+          "type": "heading",
+          "text": "Methods of use shared across multiple services"
+        },
+        {
+          "type": "paragraph",
+          "text": "SURFX provides a payment unit that can be commonly used for digital products of supported games, usage of utility apps, and passes for creative works and services. Developers can accept the same tokens and payment specifications while maintaining their own products and economic structures."
+        },
+        {
+          "type": "heading",
+          "text": "Settlement asset that connects different participants"
+        },
+        {
+          "type": "paragraph",
+          "text": "When the SURFX paid by the user is settled with the service provider and creator, it is possible to record how and to whom the transaction price is distributed. The campaign budget can also be executed according to pre-specified payment rules, and the execution results can be made public. The accuracy of off-chain verification results is complemented by operating procedures and audit systems."
+        },
+        {
+          "type": "heading",
+          "text": "Integrated rewards and ecosystem participation"
+        },
+        {
+          "type": "paragraph",
+          "text": "SURFX compensation can be provided within a pre-secured budget for legal and permitted activities. In the longer term, we will look at features for content suggestions, developer support and participation in the community budget. Holding tokens does not automatically grant company shares, dividend claims, or guaranteed returns."
+        },
+        {
+          "type": "paragraph",
+          "text": "Fiat currency and legitimate general payment methods are reviewed together for user accessibility and price prediction. Rather than forcing all users to purchase tokens, the basis for adoption is to provide a consistent usage experience and settlement function across multiple services when choosing a public token."
+        }
+      ]
+    },
+    {
+      "id": "chapter-07",
+      "title": "07 Selection of base chain",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SurfX uses BNB Smart Chain. SURFX is designed with BEP-20 tokens issued by the chain. It simplifies supply management by leveraging Solidity-based development tools and operating with a single original token. [1][2]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Use of BNB Smart Chain does not imply any affiliation with the network operator. Before launch, we check target transaction volume, wallet support, actual gas costs, response to failures, distribution country, and the capabilities of actual contracted development and review personnel."
+        },
+        {
+          "type": "paragraph",
+          "text": "BNB Smart Chain's actual network fees are paid in BNB. Supported transactions can be designed to require the operator or partner to pay a fee. Review the application conditions of the official EOA Paymaster, and payment in advance is not an exemption from the cost, but a change in the party bearing the cost. [3]"
+        }
+      ]
+    },
+    {
+      "id": "chapter-08",
+      "title": "08 Released services and ecosystem composition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The names, functions, sequence, and detailed schedule of individual launch services are currently being organized. SurfX Hub, Games, Tools, Trading, Market, Connect and Wave Pass below are tentative names that describe the functional division and expansion direction of the ecosystem, and are not a confirmed release list or services already in operation."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Hub"
+        },
+        {
+          "type": "paragraph",
+          "text": "It is a common entry point that collects and displays games, apps, owned assets, usage rights, and participation history. It allows you to explore support services and check token availability, balance, transaction status and applicable terms from one account. Rather than just gathering services in a menu, it actually connects accounts, products, and settlement rules."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Games"
+        },
+        {
+          "type": "paragraph",
+          "text": "Starting with casual games with a surfing and wave concept, we examine puzzles, runners, and light social games. Basic fun and repeated play are prioritized, and in supported markets, common payment standards are applied to skins, character customization, seasonal content, and designated passes. Competitive scores and key goods required to progress the game are maintained through game-specific policies."
+        },
+        {
+          "type": "paragraph",
+          "text": "Rewards are a function that complements the reason for enjoying or contributing to content. When you purchase a paid item, you are guaranteed to receive more monetary compensation, and probability token dividends and token stakes are excluded from the basic product range. Game rewards and token conversion are reviewed only for services that meet local laws and distribution policies."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Tools"
+        },
+        {
+          "type": "paragraph",
+          "text": "It connects utility apps that help with actual tasks, such as photo and video editing, image conversion, file conversion, productivity tools, and AI assistant functions. Supported services allow SURFX to be used for specific usage or usage rights, such as premium templates, high-resolution output, throughput, and storage space. Service provision costs and usage limits are disclosed for each product."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Market"
+        },
+        {
+          "type": "paragraph",
+          "text": "We propose a space to sell templates, game skins, stickers, and digital content created by creators. Sales price, platform fees, and refund conditions are specified and settled to the creator. For content that requires NFT, the ownership record and scope of use permission are separately defined, and there is no need to make all general digital products into NFT."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Connect"
+        },
+        {
+          "type": "paragraph",
+          "text": "It provides account linkage, wallet connection, payment estimate, compensation verification, voucher confirmation, and settlement interface for external developers. Participating services go through registration, screening, and settlement contracts. Just receiving a public token does not automatically allow you to use other apps' works, item capabilities, or server access rights."
+        },
+        {
+          "type": "heading",
+          "text": "Wave Pass"
+        },
+        {
+          "type": "paragraph",
+          "text": "We propose an optional ticket that bundles the benefits of several linked services. For example, you can combine monthly usage of a specific tool with access to designated content. We notify you in advance of the services included in the product, the period, region, amount of use, and how they will be handled upon termination, and we do not promise unlimited services or permanent rights to all future content."
+        },
+        {
+          "type": "heading",
+          "text": "SurfX Trading"
+        },
+        {
+          "type": "paragraph",
+          "text": "This is a financial utility area that provides a system to automatically execute stock and coin trading conditions created by users after entering and verifying them. SurfX provides tools for condition setting, backtesting, mock trading, and API order execution for user-named accounts. SURFX is used for system usage fees, calculation volume, and automation tool usage fees, and the actual transaction principal is managed in an external securities company/exchange account in the user's name. Actual support markets, providers, and ordering functions are disclosed after verification of contracts, policies, and technology."
+        },
+        {
+          "type": "paragraph",
+          "text": "The list of released services includes the service name, provided functions, supported countries and distribution channels, products available for SURFX, required token quantity or quotation method, distinction between free and paid goods, and refund and termination conditions. Individual features are not treated as confirmed products available for purchase until the list and terms of use are made public."
+        }
+      ]
+    },
+    {
+      "id": "chapter-09",
+      "title": "09 Stock and coin system trading",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SurfX Trading only provides a system to automatically execute stock and coin transactions according to the trading conditions created by the user. Users directly set the transaction target, buy/sell conditions, order quantity, execution time, and stop conditions and approve automatic execution. The system checks whether the approved conditions are met, transmits the order to the user's securities company or exchange account, and records the execution status. Trading conditions and investment decisions are determined by the user, and SurfX does not provide or recommend investment strategies or make discretionary trading decisions on behalf of the user. Individual services and connection providers have not yet been confirmed, and this chapter is a development and operation standard."
+        },
+        {
+          "type": "heading",
+          "text": "Steps from analysis to automatic ordering"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "functional area",
+              "Main features",
+              "Terms of offer"
+            ],
+            [
+              "market analysis",
+              "Notification of prices, charts, indicators and conditions of supported items and trading pairs",
+              "Verification of legitimate data use and expression rights and update status"
+            ],
+            [
+              "User Condition Settings",
+              "Users directly set trading conditions, target items, order size, time and risk limit",
+              "Users review and save rules and limits"
+            ],
+            [
+              "Backtest",
+              "Analysis of strategy execution results, losses and transaction costs using historical data",
+              "Indication of data period, source, assumptions and verification scope"
+            ],
+            [
+              "mock trading",
+              "Check signal/order status and strategy operation without actual funds",
+              "Use of accounts, keys, and environments separate from actual transactions"
+            ],
+            [
+              "Actual order automation",
+              "Order/cancellation/confirmation inquiry using the approved API of the user’s account",
+              "Meets provider terms and conditions, supported countries, security, and order control"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The initial product range is first reviewed for verification and automatic execution of user-created spot stock and coin trading conditions. Margin, leverage, short selling and derivatives are not included in the basic functions without separate conditions and verification. The condition setting tool provides the ability for users to configure their own buying and selling rules and risk limits, and does not definitively explain profits."
+        },
+        {
+          "type": "paragraph",
+          "text": "It starts with an analysis function and is designed to select actual orders after passing backtests and mock trading. For actual order activation, the target account, item, strategy version, maximum order amount, total exposure, and suspension conditions are displayed and explicit approval is obtained from the user. The operator does not automatically switch from mock trading to real trading or change the real trading strategy without user approval."
+        },
+        {
+          "type": "heading",
+          "text": "Distinction between SURFX usage and trading principal"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "SURFX Used Items",
+              "Scope of use right"
+            ],
+            [
+              "Analytics Tools Subscription",
+              "Use of specified analysis screens, conditional expressions and period of time reporting functions"
+            ],
+            [
+              "Backtest throughput",
+              "Disclosed data range and number of calculations/time or execution workload"
+            ],
+            [
+              "Trading conditions setting tool",
+              "Permission to use functions to create, save, and edit user trading conditions"
+            ],
+            [
+              "Mock trading and notifications",
+              "Number of supported strategies, notification conditions and usage limits for simulation tasks"
+            ],
+            [
+              "Auto order tool",
+              "Use of software within approved accounts/strategies and execution time ranges"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "SURFX is used in return for using tools and functions, and is not used as principal for buying or selling stocks or coins, dividends on investment profits, compensation for losses, or shares in joint investments. The user's actual trading funds and assets are managed in an external securities company or exchange account in the user's name and are not combined with SurfX's compensation and operating treasury. Holding tokens or paying fees for using tools does not guarantee profits or specific transactions."
+        },
+        {
+          "type": "paragraph",
+          "text": "BSC is the basis for SURFX payments and token settlement. Stock orders are processed at supported securities firms and trading markets, and coin orders are processed at supported exchanges, without the premise of recording each order in the BSC. Even in a design where SurfX does not store the transaction principal, a separate review of responsibility and regulation regarding the security of API ordering authority and the form of provision is required."
+        },
+        {
+          "type": "paragraph",
+          "text": "The initial fee consists of a fixed-term or usage-based tool fee, and performance fees proportional to investment return and transaction amount are not included in the basic plan. External data usage fees, securities firm/exchange fees, and taxes are provided separately from SurfX service fees. The basic plan does not include a structure that links game rewards and Wave Points to actual transaction amounts or investment returns."
+        },
+        {
+          "type": "heading",
+          "text": "Backtesting and Performance Display Principles"
+        },
+        {
+          "type": "paragraph",
+          "text": "The backtest indicates data source, period, frequency, trading cost, spread, slippage, and execution assumptions. Record processing standards that affect results, such as stock splits, dividends, delisting, trading suspension, coin trading pair changes, and missing data. We check for errors in mixing future information with past judgments and biases that leave only favorable stocks, and separately verify periods not used for strategy adjustment."
+        },
+        {
+          "type": "paragraph",
+          "text": "The performance screen displays not only the return rate, but also the maximum drop, volatility, number of transactions, turnover rate, and whether costs are reflected. Backtest, mock trading, and actual trading results are clearly distinguished and verification periods and strategy versions are maintained. Mock trading does not replace actual trading, and Alpaca's official documents also explain differences in slippage and order waiting order due to market shocks and delays. [11]"
+        },
+        {
+          "type": "heading",
+          "text": "Automatic ordering and risk control"
+        },
+        {
+          "type": "paragraph",
+          "text": "An inquiry-only connection is started as standard, and actual orders are activated with minimum privileges after separate approval. We do not request or use withdrawal/transfer permissions, and if supported by the provider, inquiry and order permissions and IP restrictions are separated. If a safe scope of authority cannot be configured, the actual order function of the corresponding integration will not be disclosed. Even if you do not have withdrawal authority, incorrect orders can result in trading losses, so the risk limit of the order itself is applied."
+        },
+        {
+          "type": "paragraph",
+          "text": "Before execution, check the allowable list of items and trading pairs, order amount and quantity, total exposure by account, frequency, price deviation and balance. If multiple strategies use the same account, pending orders and fills for the entire account are counted together. In case of market delay, transaction suspension, closure, call limit exceedance, or connection failure, new orders are stopped and the existing status is checked first. Stop-loss criteria are execution rules and do not guarantee loss caps or execution prices during rapid market fluctuations."
+        },
+        {
+          "type": "paragraph",
+          "text": "A unique identifier is assigned to each order and the status of receipt, partial order, completion, cancellation, and unconfirmed is tracked. API timeouts or missing responses are immediately considered failures and do not reorder. The orders, transactions, and balances of exchanges and securities companies are checked and processed, and then a decision is made on whether or not to retry. Binance official documentation also requires a separate status inquiry because the execution status may be unclear during timeout. [12]"
+        },
+        {
+          "type": "paragraph",
+          "text": "The stop function distinguishes between blocking new orders, requesting cancellation of unfilled orders, and liquidating held positions. A cancellation request does not mean the cancellation has been completed, and the volume concluded during cancellation is also checked. Position liquidation is processed according to rules approved in advance by the user or separately expressly approved. After a failure, check that unconfirmed orders and balances match and resume according to the approved recovery policy."
+        },
+        {
+          "type": "paragraph",
+          "text": "When subscription expires or SURFX balance is insufficient, new strategy implementation and new entry will be stopped and guided. The processing method for existing unfilled orders and positions is determined prior to activation. Existing assets are not arbitrarily liquidated simply for non-payment of fees, and users are guided to manage orders directly from external securities firms or exchanges and withdraw connection rights."
+        },
+        {
+          "type": "heading",
+          "text": "API Security and Global Terms of Delivery"
+        },
+        {
+          "type": "paragraph",
+          "text": "API keys and account identification information are not accepted through Telegram, WhatsApp, or email. Use a provider-approved authentication flow or verified secure input path, and consider user-side storage or isolated encrypted storage methods. The wallet key for service fee payment and the trading API key are separated, and secret values ​​are not recorded in logs, strategy files, or public chains. The trading conditions and codes entered or loaded by the user limit execution rights and verify malicious code and arbitrary network access."
+        },
+        {
+          "type": "paragraph",
+          "text": "We do not assume that service integration for customers and price redistribution are permitted just because a public API exists. Korea Investment & Securities' official guide distinguishes between APIs for own assets and affiliated services for third parties, and specifies the contract for use and display of market information and the terms of affiliated services. This document is a technical reference material and does not mean that SurfX is linked or affiliated with Korea Investment & Securities or any other provider. [9][10]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Before launching the actual order function, we review the availability of advisory, discretion, order brokerage, etc. for each target country and the API provider conditions. The designation alone of automated or non-custodial does not mean that it is exempt from regulatory application. The U.S. SEC's Investor Guide also explains registration and regulatory compliance applicable to automated advisory services. Data use and provision conditions are checked for analysis, verification, and simulation functions, and only functions that meet the conditions are provided in the relevant region. [13]"
+        },
+        {
+          "type": "paragraph",
+          "text": "It automates order status monitoring and emergency stoppages, and distinguishes between automatic monitoring and regular human response. The actual order function is limited to the extent that status inquiry, duplication prevention, permission withdrawal, failure interruption, and recovery functions have been verified. We do not claim completion of verification, 24-hour human resource response, or uninterrupted operation until actual transaction performance or risk monitoring is actually operated."
+        }
+      ]
+    },
+    {
+      "id": "chapter-10",
+      "title": "10 Uses of public tokens",
+      "blocks": [
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Area of use",
+              "Suggested usage method",
+              "design conditions"
+            ],
+            [
+              "game content",
+              "Cosmetic items and seasonal content access for supported games",
+              "Game balance, distribution policy and regional restrictions reflected"
+            ],
+            [
+              "utility app",
+              "Access to templates, output, conversion tasks and throughput",
+              "Clearly display product prices and serving sizes"
+            ],
+            [
+              "Stock and coin trading tools",
+              "Access to analysis subscriptions, backtest calculations, condition setting tools and approved order automation tools",
+              "Separated from transaction principal. Disclosure of actual connection provider, country, and permission conditions"
+            ],
+            [
+              "creative trade",
+              "Purchase of creative works and settlement of payment by creators",
+              "Permission to use, refund and fee disclosure"
+            ],
+            [
+              "common membership",
+              "Take advantage of Wave Pass’ designated service benefits",
+              "Specify target app, period, and usage limit in advance"
+            ],
+            [
+              "reward campaign",
+              "Advance, on-budget payments for verified contributions",
+              "Meet regional/platform policies and fraud verification"
+            ],
+            [
+              "Developers and Partners",
+              "Service settlement and deposit of approved campaign budget",
+              "Disclosure of settlement agreements, payment terms and execution details"
+            ],
+            [
+              "community involvement",
+              "Submission of opinions on content and support budget for subsequent stages",
+              "Scope of authority, voting and execution procedures separately confirmed"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The table above shows the range of uses that can be developed. The actual availability of each item can be confirmed through the release notice and product policy. When provided along with regular payments, discounts or benefits are set within operating resources, and all expenditures using SURFX are not expressed through token burning."
+        },
+        {
+          "type": "paragraph",
+          "text": "The tokens received by the business are sales consideration or settlement assets. Creators and partners may transfer or dispose of it for operating expenses, so the increase in payment transactions and the increase in long-term retention demand are measured separately."
+        }
+      ]
+    },
+    {
+      "id": "chapter-11",
+      "title": "11 General usage rights and holder rights of tokens",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "SURFX is designed as a public utility token for systems and content provided or officially linked by SurfX. The general scope of use is payment for supported products, acquisition of content/function usage rights, receipt of confirmed compensation, transfer between wallets, and service settlement according to contract. Specific conditions of token use are subject to the published product list and program policy for each service."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Scope of use",
+              "Rights and Conditions of Application"
+            ],
+            [
+              "Retention and Transfer",
+              "Store tokens in supported wallets and transfer them to the extent permitted by technology and law. Network fees are separate."
+            ],
+            [
+              "Use of products and features",
+              "By paying the displayed SURFX quantity, you acquire the right to use the period, usage amount, and content range of the product."
+            ],
+            [
+              "Receive reward",
+              "Meet the conditions of the eligible program and receive confirmed compensation from pre-secured resources."
+            ],
+            [
+              "Service settlement",
+              "Developers, creators, and partners receive payment for the services provided according to the actual contract concluded."
+            ],
+            [
+              "Inquiries and objections",
+              "Inquire about transaction, usage rights, and compensation details at the public support window and raise objections to errors, refunds, and payment holds."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "In the stock/coin system trading area, you can acquire the right to use supported analysis, backtesting, user condition settings, and automation software. SURFX does not replace the trading principal of investment assets, and is consumed according to the published service usage conditions regardless of trading performance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Holding a token itself does not grant free or unlimited use of all services or permanent use of content to be released in the future. The right to use arises when the product is paid for or separately announced eligibility conditions are met. Service functions, duration, throughput and regional conditions are specified for each product."
+        },
+        {
+          "type": "paragraph",
+          "text": "Wave Points and unconfirmed participation scores are separated from SURFX. Accumulating points alone does not give you the right to claim a fixed amount of tokens or cash at any time, and rewards for which actual payment has been confirmed are processed according to the announced payment conditions. The balance, confirmation status, and processing history of tokens and vouchers are displayed separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "This standard does not grant SURFX any corporate equity, dividends, bonds, business profit distribution, principal repayment or fixed interest rights. Submitting community feedback is a participatory function for operational improvement and is distinct from the company's voting rights. Since the token name alone does not determine its legal nature, the results of review of the final issuance conditions and applicable laws are reflected in the disclosure."
+        },
+        {
+          "type": "paragraph",
+          "text": "Tokens held in personal wallets and points/vouchers displayed in the account have different storage structures. The on-chain balance is checked in the corresponding wallet and contract, and the balance in the internal ledger is managed with SurfX's service records. The scope of recovery in the event of a transmission error or loss of key and the scope beyond the operator's control are specified in the wallet instructions."
+        }
+      ]
+    },
+    {
+      "id": "chapter-12",
+      "title": "12 Integrated usage structure that connects all goods",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The product integration that SurfX aims for is implemented through four functions: integrated inquiry, common payment, approved conversion, and joint settlement. There is a clear distinction between the function of showing balance and the right to actually exchange. This is a method of expanding the contact points that can be used as a common token while maintaining the characteristics of each service."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "type of goods",
+              "Integrated management and use",
+              "Transition Principle"
+            ],
+            [
+              "SURFX",
+              "Check in your personal wallet and common account. Used for public payment and settlement of supported products",
+              "On-chain transfers in scope of support. No cash back or price guarantee"
+            ],
+            [
+              "Wave Points",
+              "Non-transferable internal points that record valid participation and contribution details",
+              "For use only in pre-announced eligible programs. Fixed token, not cash claim"
+            ],
+            [
+              "Goods by game",
+              "Check balance and usage. Maintain the growth and competitive rules of the game",
+              "Basically non-convertible. Link only approved products to separate rules"
+            ],
+            [
+              "Paid recharge goods",
+              "Manage according to purchase receipt and refund conditions",
+              "Separate from free compensation. No native support for token reversal"
+            ],
+            [
+              "Coupons and Vouchers",
+              "Service, period, and usage conditions displayed in common account",
+              "Consume from permitted services. Cashback and transfer of all coupons are not guaranteed."
+            ],
+            [
+              "digital collectibles",
+              "Appears in support inventory and rights history",
+              "Individually define transaction availability and usage permissions for each app"
+            ]
+          ]
+        },
+        {
+          "type": "heading",
+          "text": "How to handle cases where conversion is possible"
+        },
+        {
+          "type": "paragraph",
+          "text": "Goods subject to conversion are registered in advance by managers and partners. The source app, accumulation route, payment source, refund possibility, country, age, and platform conditions are recorded, and the ratio, fee, limit, deadline, and exchange direction for each product are disclosed. Free participation points and paid recharge balances are managed in a separate ledger."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a user requests conversion, eligibility and misuse are checked, and payable token budget and internal points are reserved. Payment status is tracked and point deduction is confirmed once success is confirmed. The reservation is maintained until the success or failure of the transaction is confirmed, and the reservation is retried or canceled only when failure is confirmed. When retrying, the same payment identifier is used to prevent duplicate payments."
+        },
+        {
+          "type": "paragraph",
+          "text": "If the program provides a fixed rate, the tokens required for the contract are secured in advance and an accumulation cap is applied. Budget-proportional programs must be made aware of the fact that they are not fixed ratios and the calculation cycle before accrual. Do not arbitrarily reduce retroactively already established payment rights."
+        },
+        {
+          "type": "heading",
+          "text": "Example of use"
+        },
+        {
+          "type": "paragraph",
+          "text": "As an illustrative assumption, let's say a user holds 100 SURFX in an environment where token functionality is allowed. If you spend 40 on templates and output from supported tools, 30 on cosmetic content for the game, and 20 on throughput from other tools, you'll have 10 SURFX left over. The numbers are not a promise of product price or exchange rates. The key is that one token balance can be divided and used to use the products of each service."
+        },
+        {
+          "type": "paragraph",
+          "text": "It is not defined that 1 point in game A and 1 coin in game B have the same value. Any external game goods cannot be linked without the consent of the issuer and a settlement agreement. The scope of integration is limited to the rights disclosed by services officially linked to SurfX."
+        },
+        {
+          "type": "paragraph",
+          "text": "Product integration is the scope of connecting the payment, usage rights, and compensation policies of SurfX services. Stocks, coins, deposits, and trading profits and losses from external securities firms and exchange accounts are excluded from the integrated conversion, and are clearly distinguished from service token balances on separate inquiry screens. Trading volume, number of orders, and investment returns are not used as game rewards or Wave Points payment criteria."
+        },
+        {
+          "type": "heading",
+          "text": "Disclosure and change of product policy"
+        },
+        {
+          "type": "paragraph",
+          "text": "For each product, the issuing entity, free/paid classification, reason for accumulation/consumption, conversion direction, payment budget, individual/period limit, application area, expiration, and refund criteria are registered. The expiration date of free points is announced before accumulation, and the expiration and refund of paid goods and confirmed vouchers are determined separately in accordance with applicable policies and laws."
+        },
+        {
+          "type": "paragraph",
+          "text": "Refundable purchase balances, unpaid creator settlements, and confirmed rewards are managed separately from operational goods. If duplicate accounts, automation, or false performance are suspected, the compensation or conversion will be temporarily suspended and the reason and appeal procedure will be provided. We do not operate a policy of collectively withdrawing the already confirmed rights of general users without prior notice."
+        },
+        {
+          "type": "paragraph",
+          "text": "In principle, changes to conversion ratios, limits, and fees are to be notified in advance of the time and reason for application and to be applied from subsequent participation. If immediate restrictions are required due to legal or security incidents, the scope of restrictions and how existing outstanding requests will be processed will be notified. By disclosing the financial resources and termination conditions for each program, point accumulation does not expand into an obligation to pay unlimited tokens."
+        }
+      ]
+    },
+    {
+      "id": "chapter-13",
+      "title": "13 User experience and technical architecture",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Usage flow from account to wallet"
+        },
+        {
+          "type": "paragraph",
+          "text": "Users sign up with their email or supported social account and then use the games and general features of the app. Points and vouchers are checked in a common account, and a wallet is created or an external wallet is connected when using on-chain assets. To provide separate information on the wallet recovery method, key management entity and authority, and to indicate that it is non-custodial, the actual signing and recovery structure must match the description."
+        },
+        {
+          "type": "paragraph",
+          "text": "Limited session permissions pre-approved by the user are applied only when the supported wallet and verified smart account implementation allow it. The session sets expiration time, allowed contracts and actions, transaction limits and withdrawal method. An individual signature is requested for external wallets that do not have this function. Separate confirmation is required for external transfers, authority expansion, and high-value transactions. Gas payment and signature authority delegation are managed separately."
+        },
+        {
+          "type": "heading",
+          "text": "Separation of off-chain and on-chain roles"
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "component",
+              "Information we process",
+              "Accountability and Verification"
+            ],
+            [
+              "App and game servers",
+              "Provides game progress, scores, general features, and content",
+              "Fun and responsiveness, fraud detection, service quality"
+            ],
+            [
+              "Common Account and Policy Engine",
+              "Points, products, local conditions, quote and conversion approval",
+              "Ledger reconciliation, refunds, privacy protection and error recovery"
+            ],
+            [
+              "Wallet and fee payment",
+              "Signed, accepted transactions and BNB gas budget",
+              "Key management, authorization limits, abuse prevention and recovery procedures"
+            ],
+            [
+              "BSC smart contract",
+              "Token balance, confirmed payout, vesting and settlement records",
+              "Permission control, provisioning verification, events and auditing"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Personal information, entire game logs, and original photos and videos are not stored in the public blockchain. If necessary, only summary values ​​or settlement references for verification are recorded, and the original is stored separately with the purpose and retention period determined. Users are informed of the characteristics of wallet transaction information remaining in the public ledger."
+        },
+        {
+          "type": "heading",
+          "text": "Payment and Compensation Agreement"
+        },
+        {
+          "type": "paragraph",
+          "text": "Token, vesting, reward distribution, and service settlement contracts are separated by role. External integrations must verify the official contract address and chain identifier. Payment contracts record processed payment identifiers and reject reuse. Signature-based requests bind the chain, target contract, recipient, amount, and expiry conditions. Because a successful on-chain transaction does not automatically mean the service was delivered, receipts and issued service entitlements must be reconciled."
+        },
+        {
+          "type": "paragraph",
+          "text": "The BSC selects transactions that can be sponsored and reviews how the operator covers gas costs. Payment has limits per address, contract, daily limit, and account. When the payment budget is exhausted or the network is congested, notification is given and a waiting/batch route or a direct route is provided based on the user's consent. We do not pass on costs to users without prior notice."
+        }
+      ]
+    },
+    {
+      "id": "chapter-14",
+      "title": "14 Service pricing and settlement",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The cost of providing the service is calculated based on legal currency or a separate service accounting unit, and the basic method is to indicate the amount of SURFX required at the time of support payment. This is a policy that does not fix the value of SURFX, but makes the quantity and price of the product easier to understand."
+        },
+        {
+          "type": "paragraph",
+          "text": "Once sufficient market data is obtained, set verifiable standard prices, quote validity times, price deviation limits, and data interruption conditions. If liquidity is shallow or there is no reliable price, we will stop automatic conversion and do not arbitrarily mark the token price as stable. In this case, the service is operated with regular payments or limited products with a pre-set budget."
+        },
+        {
+          "type": "paragraph",
+          "text": "The payment screen displays product details, receiving service, token quantity, platform fee, gas burden holder, and refund conditions. Decide in advance whether the refund will be based on the token quantity or the product price at the time of purchase, and explain any differences resulting from changes in the market price at the time of refund. Irreversible on-chain transfers and cancelable service reservations are managed separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "The partner agreement sets out the settlement assets, frequency and fees. SURFX settlement will be reviewed as a basis, but payments in fiat currency or other assets will be provided separately only to the extent that the necessary procedures are in place with legitimate providers. Avoid automatic full payments that do not take into account price changes, refund reserves, and external service costs."
+        },
+        {
+          "type": "paragraph",
+          "text": "When the service is terminated, the procedures for discontinuing new sales, prior notice, and processing of remaining tickets and unfulfilled settlements are applied. The mere fact that tokens remain on the blockchain does not mean that the functionality of a terminated app will be permanently provided. Already confirmed user rights and reserves will be specifically dealt with in the termination plan."
+        }
+      ]
+    },
+    {
+      "id": "chapter-15",
+      "title": "15 Token supply and distribution standards",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The supply standard is an initial total issuance of 1,000,000,000 SURFX, prohibition of additional issuance after issuance, release of long-term installments, and disclosure of execution details. This white paper does not indicate that the token issuance or sale has already been completed. Before official distribution, the final specification, distribution wallet, and locking conditions are disclosed, and it is verified that the actual contract matches the public specification."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "item",
+              "Suggested specifications"
+            ],
+            [
+              "token name",
+              "SurfX Token"
+            ],
+            [
+              "token symbol",
+              "SURFX is a tentative name. Check for duplication and rights before confirmation."
+            ],
+            [
+              "Initial chain and standard",
+              "BNB Smart Chain / BEP-20"
+            ],
+            [
+              "Total initial issuance amount",
+              "1,000,000,000 SURFX"
+            ],
+            [
+              "decimal places",
+              "18"
+            ],
+            [
+              "Issuance policy",
+              "All 1 billion tokens issued at initial deployment; no subsequent minting or reissuance of burned tokens."
+            ],
+            [
+              "contract structure",
+              "The core token contract is designed to be non-upgradeable, with separate operating contracts and permissions."
+            ],
+            [
+              "network gas",
+              "BNB. The operator may conditionally sponsor fees for supported transactions."
+            ],
+            [
+              "Burning Policy",
+              "The v0.2 design has no burn function or automatic buyback. Products and returns are not described on the assumption of a reduced supply."
+            ]
+          ]
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Distribution items",
+              "ratio",
+              "quantity",
+              "enforcement purpose"
+            ],
+            [
+              "User and ecosystem rewards",
+              "40%",
+              "400,000,000",
+              "Promoting proven participation and long-term service use"
+            ],
+            [
+              "Developers and content ecosystem",
+              "20%",
+              "200,000,000",
+              "App integration, support for creative work and service development"
+            ],
+            [
+              "Representatives and Long-Term Contributors",
+              "15%",
+              "150,000,000",
+              "Representative's long-term development and operation contribution and future contractual contribution compensation"
+            ],
+            [
+              "Operations and Security Treasury",
+              "10%",
+              "100,000,000",
+              "Audit, Infrastructure, Operations and Emergency Response"
+            ],
+            [
+              "strategic partner",
+              "10%",
+              "100,000,000",
+              "Settlement/service linkage and ecosystem cooperation"
+            ],
+            [
+              "Initial Liquidity Preparation",
+              "5%",
+              "50,000,000",
+              "Prepare for approved market liquidity provision"
+            ],
+            [
+              "total",
+              "100%",
+              "1,000,000,000",
+              ""
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Token distribution is different from cash budgeting. Even if there is an operating treasury or liquidity reserves, cash to pay salaries, server fees, and BNB gas fees is not automatically secured. Liquidity pools require separate corresponding assets and are not assumed to have trading support or sufficient market depth."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 15% allocation to representatives and long-term contributors is for long-term development and operation contributions. The representative's allocation and receipt details are disclosed, and when allocating to contributors in the future, the contract and contribution scope are recorded separately. A waiting period and split release are applied to the quantity in question, and the lock is not arbitrarily released due to emergency operating costs."
+        },
+        {
+          "type": "paragraph",
+          "text": "20% of the developer/content budget and 10% of the strategic partner budget are preparations for each purpose for future actual development and integration contracts. It does not refer to contracts that have already been concluded or quantities that have been allocated. It is executed after confirming the output, payment terms and contributions for each contract, and unused amounts are stored in the corresponding wallet."
+        },
+        {
+          "type": "paragraph",
+          "text": "Representative distribution and operational treasury are managed in separate wallets and ledgers. When the treasury pays compensation to a representative or executes a transaction related to the representative, the purpose, amount, and interests are recorded and disclosed. The same expenditure is not double-accounted for as development support, compensation, or operating expenses."
+        }
+      ]
+    },
+    {
+      "id": "chapter-16",
+      "title": "16 Lockdown and distribution disclosure",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The point of issuance is called TGE. The example initial release limit is proposed to be 50,000,000 SURFX, which is 5% of the total amount. The monthly release date is defined as the reference date of each month following the TGE. If there is no waiting period, it will be canceled for the first time after 1 month, 7 months for 6 months, and 13 months for 12 months. Even if compensation, support, and treasury quantities are released, they are executed according to the approved budget and unused quantities are stored."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Distribution items",
+              "TGE release",
+              "Proposal for release of remaining stock"
+            ],
+            [
+              "User and ecosystem rewards",
+              "10,000,000",
+              "The remaining 390,000,000 tokens are released in equal installments over months 1–60. Payments stay within approved budgets."
+            ],
+            [
+              "Developers and content ecosystem",
+              "0",
+              "After a six-month waiting period, tokens are released in equal installments over months 7–54. Payments depend on development milestones."
+            ],
+            [
+              "Representatives and Long-Term Contributors",
+              "0",
+              "After a 12-month waiting period, tokens are released in equal installments over months 13–48. No lump-sum retroactive payment."
+            ],
+            [
+              "Operations and Security Treasury",
+              "10,000,000",
+              "The remaining 90,000,000 tokens are released in equal installments over months 1–48, with disclosure of spending purposes."
+            ],
+            [
+              "strategic partner",
+              "0",
+              "After a 12-month waiting period, tokens are released in equal installments over months 13–48, subject to contractual payment terms."
+            ],
+            [
+              "Initial Liquidity Preparation",
+              "30,000,000",
+              "The remaining 20,000,000 tokens are released in equal installments over months 1–24. Actual liquidity provision requires separate approval."
+            ],
+            [
+              "total",
+              "50,000,000",
+              "Initial release limit is 5% of the total"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The amount that can be released and the actual amount distributed in the market are not the same. The amount remaining in the treasury, unpaid compensation, vesting contracts, and liquidity injection balance are separately disclosed. The actual initial distribution volume is calculated as the quantity actually paid and distributed to TGE, and the above 5% is not indicated as the confirmed distribution volume."
+        },
+        {
+          "type": "paragraph",
+          "text": "The official public page or regular reporting separately displays the initial issuance amount, burn amount, locked balance, release cumulative amount, treasury, actual payment and next release schedule. Distribution wallet, administrator authority, vesting contract address and change history are disclosed. The rounded remaining amount is adjusted in the last release section to match the total amount distributed."
+        },
+        {
+          "type": "paragraph",
+          "text": "Official supply status is updated regularly, and significant unlocks and wallet changes are announced separately. Since there is no burning function in the initial distribution standard for v0.2, the burning amount is displayed as 0. Since the token itself is a non-upgradeable type, additional issuance and burning functions cannot be inserted after distribution through notice or operator decision."
+        }
+      ]
+    },
+    {
+      "id": "chapter-17",
+      "title": "17 Compensation budget and operating resources",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Compensation where financial resources are secured first"
+        },
+        {
+          "type": "paragraph",
+          "text": "Token rewards are paid from the already issued distribution volume and approved campaign deposits. New tokens are not issued each time a user is active. The size of the reward is determined by considering payable token resources, budget approval, verified contribution, level of fraud, and actual use of the service."
+        },
+        {
+          "type": "paragraph",
+          "text": "As an illustrative example, even if there are 2,000,000 tokens that can be released and used in a month, if the approved reward budget is 1,200,000 and the actual resources secured for the campaign are 1,000,000, the payment limit is less than 1,000,000. These figures are operational examples and are not actual monthly payment plans. Campaign costs received with other assets are recognized as token budget after securing SURFX resources separately."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the budget proportional method, payment is made according to the proportion of effective contribution points determined in advance. For example, if the allocated budget for a program is 100,000 SURFX and a user who is recognized with 1% of the total valid score is subject to a maximum allocation of 1,000 SURFX before the personal cap is applied. Just because the number of people increases, the total amount of program payments does not increase indefinitely. Rules for processing non-achievement, deductions from illegal use, and remaining budget are also disclosed prior to participation."
+        },
+        {
+          "type": "heading",
+          "text": "Services that create demand"
+        },
+        {
+          "type": "paragraph",
+          "text": "Recurring consumption sources consist of content confirmed in the release list, tools needed for creative work, usage-based services, and approved partner campaigns. We first verify the products that users want to purchase even without compensation, check repurchase, return visits, and service provision costs, and then expand the compensation program."
+        },
+        {
+          "type": "paragraph",
+          "text": "The act of paying tokens to the creator is a transfer and does not reduce the total supply. Voucher consumption is the use of service rights, and deposit/locking is a transfer restriction for a certain period of time. There is no burning function in the v0.2 token standard, so service use or payment is not promoted as burning or permanent supply reduction."
+        },
+        {
+          "type": "heading",
+          "text": "operating resources of the business"
+        },
+        {
+          "type": "paragraph",
+          "text": "Operational resources are prepared in stages. In the preparation stage for launch, the development budget secured separately from the representative's business funds is first used, and after the service launch, actual usage fees, content transaction fees, membership, approved partner campaigns, and developer service sales are reviewed as operating resources. The amount of own funds, external investments, and sales are not indicated as confirmed resources until the details of the secured funds are confirmed."
+        },
+        {
+          "type": "paragraph",
+          "text": "The representative's personal expenditures and the project's business expenditures are separated into separate accounts and ledgers. It is a principle of separating operational fund management regardless of the form of business registration, and does not mean that the legal responsibilities of individuals and businesses are automatically separated. The token treasury valuation and actual spendable cash and BNB reserves are also distinguished."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Classification of financial resources",
+              "Principles of use"
+            ],
+            [
+              "Representative's own funds and development budget",
+              "Initial development, domain/server, and launch preparation costs. Record actual input amount and basis for expenditure"
+            ],
+            [
+              "Service sales revenue",
+              "After reflecting provision costs, refunds, and essential operating costs, allocate to service improvement and approved compensation."
+            ],
+            [
+              "Partner Upfront Budget",
+              "Execute only for contracted campaign purposes and payments. Separate management of unexecuted portion and refund obligations"
+            ],
+            [
+              "Token treasury by purpose",
+              "Token distribution according to vesting and approval budget. Not considered cash reserves or sales"
+            ],
+            [
+              "External procurement and token sale",
+              "It is not assumed to be based on currently confirmed financial resources. When pushing forward, sales conditions, legal review, and use of funds are separately disclosed."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Execution priorities are set in the order of confirmed refund, compensation, and partner settlement obligations, essential operating expenses such as security, servers, and customer support, contracted development expenses, and new expansion and marketing. Funds that have a legally or contractual purpose are given priority over that purpose, and there is no commitment to spend unsecured expenses based on token price increases."
+        },
+        {
+          "type": "paragraph",
+          "text": "Representatives calculate cash balances, BNB fee budgets, fixed payment obligations and fixed costs on a monthly basis. The internal management goal is to secure at least 6 months' worth of essential fixed costs, but do not indicate that reserves are currently secured. If reserves fall short of the target, new compensation, marketing, and expansion expenditures will be adjusted and fulfillment of already confirmed obligations will be prioritized."
+        },
+        {
+          "type": "paragraph",
+          "text": "The basic plan for operational status is monthly tally and quarterly summary disclosure. Disclosure items include types of resources, major expenditure categories, compensation execution, treasury movements and disposition of unfulfilled obligations. Personal information of customers or non-disclosure agreement information of trading partners is not disclosed. If published figures have not been externally audited, indicate that they are self-reported."
+        },
+        {
+          "type": "paragraph",
+          "text": "When a system trading tool is released, analysis and mock trading subscriptions, backtest throughput, and approved automation tool usage fees are reviewed as revenue sources. Data licensing, price receipt, calculation, secure storage, order status monitoring, and failure response costs are managed separately as service costs. Users' trading principal and profits are not included in SurfX's operating resources or token compensation resources."
+        }
+      ]
+    },
+    {
+      "id": "chapter-18",
+      "title": "18 Smart contract security and operational control",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The token body and vesting contract are designed to be as simple as possible. The standard is a non-upgradeable token that is issued in full at the time of initial distribution and has no additional issuance function thereafter. The initial standard does not include transmission taxes, automatic repurchase/burning, or operator's arbitrary balance seizure functions. Operating contracts such as compensation and settlement are managed separately from the token body."
+        },
+        {
+          "type": "paragraph",
+          "text": "The contract goes through testnet verification and external security review before being distributed using real assets. Check supply quantity, lock schedule, payment identifier duplication prevention, permission change, input value verification and failure recovery. An audit is not indicated as complete or secure until the results of the review company, report, or actions are made public."
+        },
+        {
+          "type": "heading",
+          "text": "Management keys and representative authority"
+        },
+        {
+          "type": "paragraph",
+          "text": "The initial manager and final person responsible for financial execution is the representative. For storing major assets, first consider hardware wallets or equivalent offline storage, and separate operating wallets, long-term treasury, and contract distribution accounts. Only the minimum authority and minimum balance necessary for work are granted to the server, and long-term storage keys are not stored in plain text."
+        },
+        {
+          "type": "paragraph",
+          "text": "If you apply a multi-key configuration, consider separating, for example, three keys that require two approvals to different devices and locations. Before actual introduction, application status, signature threshold, key management entity, and recovery procedure are disclosed. A configuration in which a representative controls multiple keys can reduce the risk of a single key incident, but does not imply independent majority approval or decentralization."
+        },
+        {
+          "type": "heading",
+          "text": "Enforcement Restrictions and Change Notices"
+        },
+        {
+          "type": "paragraph",
+          "text": "In the operational wallet, execution limits and allowable contracts are set for each case and day. The set value is confirmed and disclosed in accordance with the fund size and transaction pattern before launch. For major manager changes and operating contract upgrades, at least 48 hours of advance notice and time delay are reviewed as the basic policy, and whether or not the actual time lock function is actually applied is specified for each contract."
+        },
+        {
+          "type": "paragraph",
+          "text": "In the event of a security incident, the design is such that the representative can temporarily suspend new execution of the affected compensation/settlement module. Emergency suspension is a limited right to stop new payments and does not extend to the right to arbitrarily freeze the token body or change supply. Disclose the reason for suspension, affected functions and recovery conditions and verify error correction and balance reconciliation before resumption."
+        },
+        {
+          "type": "heading",
+          "text": "Compensation and user protection"
+        },
+        {
+          "type": "paragraph",
+          "text": "Fraud management detects multiple accounts, automation, false performance, and repetitive refunds, but processes only the necessary range of information. There are procedures for filing false positive objections and providing information on reasons for payment withholding. The operator does not promise that tokens that have already been transferred to the user's external wallet can be retrieved at any time."
+        },
+        {
+          "type": "paragraph",
+          "text": "The representative regularly checks the consistency of compensation ledger and on-chain payments, partner settlement, price data anomalies, and payment costs. Isolated decision-making, phishing, lost keys and absence of representatives are risks that must be continually managed. External review and distribution of authority are recognized as relevant controls only after actual personnel, contracts, and implementation are in place."
+        }
+      ]
+    },
+    {
+      "id": "chapter-19",
+      "title": "19 Representative operation and community participation",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The initial operation is a representative responsibility system. The representative decides on service launch, financial execution, security response, and user support and records changes according to the disclosure policy. Holding a token does not automatically grant the representative the right to operate a business or vote on the company."
+        },
+        {
+          "type": "paragraph",
+          "text": "Users can submit feature suggestions, service improvements, and program operation opinions through the official support and community window. Representatives share, to the extent possible, whether major proposals were adopted and the reasons for adoption. The initial opinion gathering is advisory in nature and does not indicate that the token voting results will be automatically contractually executed."
+        },
+        {
+          "type": "paragraph",
+          "text": "To introduce on-chain proposals and voting in the subsequent stage, the agenda scope, proposal qualifications, quorum, conflicts of interest, and execution entity are first disclosed. A DAO or independent governance is not described as operational until it is actually implemented and its effectiveness is defined. Staking that provides fixed interest or retained earnings is not included in v0.2's general utility rights."
+        }
+      ]
+    },
+    {
+      "id": "chapter-20",
+      "title": "20 Scalability and future direction",
+      "blocks": [
+        {
+          "type": "heading",
+          "text": "Ensure new services use the same foundation"
+        },
+        {
+          "type": "paragraph",
+          "text": "The goal is to reuse a common account, product list, token payment and settlement interface each time a new game or utility app is added. If you can check the status of support assets and usage rights you already have, it becomes easier for users to move, and partners can secure a path to connect to the existing ecosystem."
+        },
+        {
+          "type": "paragraph",
+          "text": "The key to scalability is the quality of integration rather than the number of services. In fact, the effectiveness of connection is evaluated by the proportion of users who use two or more services, settlement success rate, refund and dispute resolution, and creator re-participation rate. Even if a partner is added, integration is not considered complete if product offerings and rights are not defined."
+        },
+        {
+          "type": "paragraph",
+          "text": "Initially, game/app servers and on-chain settlement are separated and only necessary results are recorded to manage costs. As the service scale increases, expansion paths that review bundle settlement, compensation claim optimization, and security are evaluated in order. We do not offer specific TPS or always-free transactions as product guarantees."
+        },
+        {
+          "type": "heading",
+          "text": "AI tools and digital creation"
+        },
+        {
+          "type": "paragraph",
+          "text": "We examine AI image and video assistant tools, automatic editing, creative management, and collaboration functions as future integration candidates. Computation and storage space that incur costs are measured by the amount of service provided, and SURFX takes on the role of linking use and settlement. Rather than the name of AI or blockchain technology itself, it is judged by the results completed by the user and the utility they are willing to pay for."
+        },
+        {
+          "type": "heading",
+          "text": "Long-term ecosystem value"
+        },
+        {
+          "type": "paragraph",
+          "text": "SurfX's future orientation lies in the structure that allows goods bundled in one service to be used in multiple experiences, the development specifications that partners can participate in, and the settlement details that users can check. As the ecosystem grows, the possible roles and touch points for public tokens may increase, but the results will depend on product execution, actual demand, costs and market conditions."
+        }
+      ]
+    },
+    {
+      "id": "chapter-21",
+      "title": "21 step-by-step development roadmap",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The roadmap is a step-by-step goal that takes into account development and support capacity. The period is the planning range after official launch and is not a confirmed launch date. After organizing individual services, the list and order are made public, and the next step is taken when the usage demand, financial resources, security, and global provision conditions are met."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Stages and Target Period",
+              "Key deliverables",
+              "Conditions for moving to the next step"
+            ],
+            [
+              "Stage 1\nMonths 0–3 after formal project start",
+              "Release candidate list, product/product policy, common account and prototype",
+              "Enter representative/support window, confirm initial scope of provision and actual operating budget"
+            ],
+            [
+              "Stage 2\nMonths 3–6",
+              "Non-token beta, Wave Points and vouchers for selected core services",
+              "Verification of repeated use, service demand, and response to fraudulent use"
+            ],
+            [
+              "Stage 3\nMonths 6–9",
+              "BSC testnet, token, vesting, settlement contract and limited pilot",
+              "Completed audit response, supply verification, incident response and policy review"
+            ],
+            [
+              "Stage 4\nMonths 9–12",
+              "Restricted token functions and common payments for countries and channels that meet the conditions",
+              "Confirm stable operation of actual usage, refund, settlement, and payment costs"
+            ],
+            [
+              "Stage 5\nMonths 12–24",
+              "Proven launch services, expanded partner interface and content scope",
+              "Proven partner demand and sustainable service profits and losses"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The completion criteria for the initial launch are that there are repeat users, not token holders, and that payments and settlements between different services are normally connected. If this condition is not met, the timing of issuance and expansion is adjusted."
+        },
+        {
+          "type": "paragraph",
+          "text": "System trading is developed in the following order: data authority and analysis tool verification, strategy/backtest and mock trading, linkage to inquiry-only account, and limited actual orders. Disclosure of actual orders is limited to cases where verification of API business conditions, regional review, duplicate order prevention, suspension, and recovery has been completed. The approval schedule for basic game/app release and actual order automation is not guaranteed to be the same."
+        }
+      ]
+    },
+    {
+      "id": "chapter-22",
+      "title": "22 Performance indicators and disclosure principles",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Operational metrics distinguish between simple growth in user numbers and actual usage. Accounts that only receive compensation, accounts that actually use services, internal treasury movements, and user payment transactions are measured separately and double calculations are avoided."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "indicator",
+              "Measurement purpose"
+            ],
+            [
+              "Re-visit and paid use excluding compensation",
+              "Check whether there is recurring demand for the service itself without token payment"
+            ],
+            [
+              "Conversion rate between services",
+              "Check whether one user actually uses two or more connected services"
+            ],
+            [
+              "Actual payment and settlement completion rate",
+              "Verification of completeness of usage fees and partner payments, excluding internal transfers and cancellations"
+            ],
+            [
+              "Service revenue and cost compared to compensation",
+              "Check whether the business generates operating cash flow independent of token resources"
+            ],
+            [
+              "Illegal use and objection processing",
+              "Measure compensation leakage, false positives and user damage together"
+            ],
+            [
+              "Release and actual distribution volume",
+              "Disclose supply changes by distinguishing between locking, treasury, payment and market distribution"
+            ],
+            [
+              "Wallet success rate and gas payment cost",
+              "Ensure sustainability of user entry experience and operating costs per transaction"
+            ],
+            [
+              "Execution quality of trading tools",
+              "Check duplicate orders, unconfirmed status, order/cancellation results, check delays and compliance with user limits"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The definition, period, and excluded items of the indicator are also disclosed. Subscriber goals, trading volume goals, price goals, and listing schedules that have no basis for achievement are not indicated as confirmed performance in the white paper."
+        }
+      ]
+    },
+    {
+      "id": "chapter-23",
+      "title": "23 Release conditions and key risks",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The goal is to be global, but the actual functions provided and supported countries for each service follow the published list. The items below are conditions to be reflected in the launch process and are not an explanation of whether the product currently holds sales, issuance, or sales licenses around the world."
+        },
+        {
+          "type": "heading",
+          "text": "Mobile Deployment Policy"
+        },
+        {
+          "type": "paragraph",
+          "text": "Apple's app review guidelines follow the principle of in-app payment for payment of digital functions and content, and limit the unlocking of functions through cryptocurrency or wallet and the compensation of some cryptocurrency tasks. Allowed routes and exceptions for each country and storefront must be checked separately. Therefore, we do not assume that SURFX can immediately open the paid features of all iOS apps. [5]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Google Play regulates the reporting of sales and acquisition functions of tokenized digital assets and limits on promotion of profit potential. SurfX classifies functions by distribution country and channel and checks actual screening conditions. Using the web or PWA doesn't mean you're free from the laws of your country. [6]"
+        },
+        {
+          "type": "heading",
+          "text": "Game currency conversion and service area"
+        },
+        {
+          "type": "paragraph",
+          "text": "Article 32, Paragraph 1, Subparagraph 7 of Korea's Game Industry Act prohibits the business of exchanging, arranging for exchange, or repurchasing the results of game use as stipulated by law. Specific game design and product characteristics require legal and classification review. We do not promise to convert cash tokens as a basic feature in games targeting Korea, and we will first review non-convertible point and content use models. [7][8]"
+        },
+        {
+          "type": "paragraph",
+          "text": "Simply calling a token a utility does not determine its legal character. We review the issuance conditions, holding rights, sales method, consignment, exchange, and settlement services, and necessary reporting, user verification, and consumer protection obligations according to the target region. Regional restrictions are reflected and disclosed in actual functions and access controls."
+        },
+        {
+          "type": "heading",
+          "text": "Economic and technological risks"
+        },
+        {
+          "type": "paragraph",
+          "text": "The main risks are token price fluctuations and shallow liquidity, reward abuse, development delays, smart contract errors, wallet recovery failure, network congestion, termination of partner services, and misuse of administrator authority. Issuance caps and audits improve supply rules and code review, respectively, but do not guarantee market pricing, uninterrupted operation, and loss prevention."
+        },
+        {
+          "type": "paragraph",
+          "text": "SURFX is not a product designed to grant company shares or bonds, and does not provide fixed returns, guaranteed principal, guaranteed listing, or regular redemption rights. Actual rights and legal classifications are confirmed in accordance with the final published document and applicable law. Major changes to the white paper are disclosed through version and change history."
+        },
+        {
+          "type": "paragraph",
+          "text": "Development schedules, customer support and incident response may be affected by operational staffing and availability. Manage with phased rollout and emergency documentation appropriate to the scale of operations, but do not mark this as a complete business continuity guarantee. Representative information, official contact information, unexecuted budget, and actual contract status are separately disclosed."
+        },
+        {
+          "type": "paragraph",
+          "text": "System trading involves the risk of loss of investment principal, over-optimization of strategy, incorrect data, order delay, duplication, non-execution, exchange/securities company failure, and API authority leakage. The performance of backtests and mock trading does not guarantee actual trading results. Subscription fees, SURFX payments and investment profits and losses are distinguished, and the responsibilities of system functions and the roles of user settings and external providers are specified in the terms and conditions."
+        }
+      ]
+    },
+    {
+      "id": "chapter-24",
+      "title": "24 Management of public information and white paper changes",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This white paper reflects the basic direction of representative operation, Telegram, WhatsApp, and email support, and global market orientation. The launch service will be released after organization. Tokens are designed as utility assets in the scope of general payment, usage rights, compensation, transfer, and settlement, and supply, security, goods, and resources follow the standards in this document."
+        },
+        {
+          "type": "table",
+          "rows": [
+            [
+              "Category",
+              "Information and status to be disclosed"
+            ],
+            [
+              "Operators and Support",
+              "Operating form: company. Name: Neocode. Representative: Eunseong Park. Business registration number: 422-29-01059. Official email: neocode.kr@gmail.com. Telegram and WhatsApp channels will be published after they are established."
+            ],
+            [
+              "launch service",
+              "List of individual services and functions, trading support markets/providers, target countries/channels and fees are organized and disclosed."
+            ],
+            [
+              "token supply",
+              "Disclosure of final issuance details, TGE timing, distribution/lock wallet, and calculation of actual circulation volume"
+            ],
+            [
+              "Contracts and Security",
+              "Disclosure of actual contract address, administrator authority, distribution/review/time lock application status"
+            ],
+            [
+              "goods policy",
+              "Disclosure of conversion target, ratio, limit, budget and confirmed payment obligations by program"
+            ],
+            [
+              "operating resources",
+              "Compiled based on actual invested capital, secured sales, reserves and expenditure details"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "When modifying the white paper, record the version, implementation time, and reason for change. Already confirmed token supply/locking or user payment rights will not be retroactively changed solely for operational needs. Significant changes to services and rights are notified to users in advance and handled in accordance with applicable policies and laws."
+        },
+        {
+          "type": "paragraph",
+          "text": "The main changes in this revision are in the areas of representative operation and support channels, global provision policy, general utility rights, distribution of representatives and long-term contributors, key and financial control of independent operation, management of operating resources, and stock and coin system trading. The actual launch, audit, and funding of services and contracts are updated when the relevant evidence is made public."
+        },
+        {
+          "type": "paragraph",
+          "text": "SurfX aims for an ecosystem where one public token connects the use and settlement of multiple services. Within the operating structure for which the representative is responsible, supported products, rights, financial resources, and execution details are clearly disclosed and services are expanded to meet actual user demand."
+        }
+      ]
+    },
+    {
+      "id": "chapter-25",
+      "title": "25 References",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Verification date: October 28, 2026. The numbers in square brackets in the text correspond to the official data below. The operating policy, target market, and support channels are the basic direction of the project, and the detailed service and token implementation, figures, and operation policies are the standards for preparation for issuance."
+        },
+        {
+          "type": "paragraph",
+          "text": "[1] BNB Chain  BSC Quick Guide"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://docs.bnbchain.org/bnb-smart-chain/developers/quick-guide/"
+        },
+        {
+          "type": "paragraph",
+          "text": "[2] BNB Chain BEP 20 standard"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://github.com/bnb-chain/BEPs/blob/master/BEPs/BEP20.md"
+        },
+        {
+          "type": "paragraph",
+          "text": "[3] BNB Chain  EOA Paymaster Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://docs.bnbchain.org/bnb-smart-chain/developers/paymaster/overview/"
+        },
+        {
+          "type": "paragraph",
+          "text": "[4] BNB Chain  Validator Overview"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://docs.bnbchain.org/bnb-smart-chain/validator/overview/"
+        },
+        {
+          "type": "paragraph",
+          "text": "[5] Apple App Review Guidelines 3.1.1 and 3.1.5"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://developer.apple.com/app-store/review/guidelines/"
+        },
+        {
+          "type": "paragraph",
+          "text": "[6] Google Play  Blockchain based Content"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://support.google.com/googleplay/android-developer/answer/13607354?hl=en"
+        },
+        {
+          "type": "paragraph",
+          "text": "[7] National Legislation Information Center Game Industry Promotion Act Article 32 (1) No. 7"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://www.law.go.kr/lsLinkCommonInfo.do?chrClsCd=010202&lsJoLnkSeq=1024558617"
+        },
+        {
+          "type": "paragraph",
+          "text": "[8] National Legislation Information Center Article 18-4 of the Enforcement Decree of the Game Industry Promotion Act"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://law.go.kr/LSW/lsLinkCommonInfo.do?lspttninfSeq=56613"
+        },
+        {
+          "type": "paragraph",
+          "text": "[9] Korea Investment & Securities Open API service introduction and partnership information"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://apiportal.koreainvestment.com/about-open-api"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://apiportal.koreainvestment.com/provider"
+        },
+        {
+          "type": "paragraph",
+          "text": "[10] Korea Investment & Securities Official Open Trading API Example"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://github.com/koreainvestment/open-trading-api"
+        },
+        {
+          "type": "paragraph",
+          "text": "[11] Alpaca Paper Trading official document"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://docs.alpaca.markets/us/docs/paper-trading"
+        },
+        {
+          "type": "paragraph",
+          "text": "[12] Binance Spot REST API and request security official documentation"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://developers.binance.com/en/docs/products/spot/rest-api"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://github.com/binance/binance-spot-api-docs/blob/master/rest-api.md"
+        },
+        {
+          "type": "paragraph",
+          "text": "[13] SEC Investor.gov  Investor Bulletin Robo Advisers"
+        },
+        {
+          "type": "paragraph",
+          "text": "https://www.investor.gov/introduction-investing/general-resources/news-alerts/alerts-bulletins/investor-bulletins-45"
+        }
+      ]
+    }
+  ]
+}
