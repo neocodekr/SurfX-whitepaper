@@ -4,7 +4,7 @@ import source from './whitepaper.ko.json'
 import { chapterMeta, groups } from './whitepaperMeta'
 
 const asset = (name) => import.meta.env.BASE_URL + name
-const lang = ref(localStorage.getItem('surfx-language') === 'ko' ? 'ko' : 'en')
+const lang = ref('en')
 const pageId = ref(readPageId())
 const menuOpen = ref(false)
 const sidebar = ref(null)
@@ -68,7 +68,6 @@ function revealSelected() {
 }
 function changeLanguage(value) {
   lang.value = value
-  localStorage.setItem('surfx-language', value)
 }
 function openSearch() {
   searchOpen.value = true
