@@ -35,8 +35,6 @@ a{color:inherit;text-decoration:none}
 .nav-group h2{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.06em;color:#273b37;margin:0 0 5px;padding:8px 10px;font-weight:800}
 .nav-group button .chapter-number{font-size:10px;color:#9aada5;flex:0 0 19px;padding-top:1px;font-weight:700}
 .nav-group button.selected .chapter-number{color:#2bad89}
-.source-download{display:block;margin:25px 8px 0;padding:14px 12px;border:1px solid #dceae3;border-radius:8px;color:#267c63;font-size:12px;font-weight:800}
-.source-download:hover{background:#f2faf6}
 .docs-content-grid{margin:68px 0 0 260px;display:grid;grid-template-columns:minmax(0,800px) minmax(180px,220px);max-width:1220px}
 .docs-main{min-width:0;padding:39px 56px 65px}
 .breadcrumb{display:flex;gap:10px;align-items:center;color:#19866a;font-size:11px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}

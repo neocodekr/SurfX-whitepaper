@@ -124,7 +124,6 @@ onUnmounted(() => {
           <h2><span class="nav-icon">{{ group.icon }}</span>{{ lang === 'ko' ? group.ko : group.en }}</h2>
           <button v-for="number in group.chapters" :key="number" type="button" :class="{ selected: pageId === source.chapters[number - 1].id }" @click="navigate(source.chapters[number - 1].id)"><span class="chapter-number">{{ String(number).padStart(2, '0') }}</span><span>{{ lang === 'ko' ? cleanTitle(source.chapters[number - 1]) : chapterMeta[number - 1].en }}</span></button>
         </section>
-        <a class="source-download" :href="asset('SurfX_Whitepaper_KO_v0_2.docx')" download>↓ {{ lang === 'ko' ? '원본 백서 다운로드' : 'Download Korean source' }}</a>
       </div>
     </aside>
 
