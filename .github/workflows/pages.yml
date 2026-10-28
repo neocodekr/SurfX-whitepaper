@@ -1,4 +1,4 @@
-name: Deploy SurfX whitepaper
+name: Deploy SurfK whitepaper
 
 on:
   push:

@@ -1,7 +1,7 @@
 {
   "introduction": [
-    "SurfX connects mobile games, utility apps, and stock and coin system trading tools to users around the world with one account and common token. The purpose of this white paper is to place waves and surfing at the center of the brand and connect payments and settlements of users, developers, and creators with common rules.",
-    "SurfX uses BNB Smart Chain and proposes SURFX as a BEP-20 shared utility token. Each app retains its own scores and points for its specific purpose; only approved uses and digital items are connected under published terms.",
+    "SurfK connects mobile games, utility apps, and stock and coin system trading tools to users around the world with one account and common token. The purpose of this white paper is to place waves and surfing at the center of the brand and connect payments and settlements of users, developers, and creators with common rules.",
+    "SurfK uses BNB Smart Chain and proposes SURFK as a BEP-20 shared utility token. Each app retains its own scores and points for its specific purpose; only approved uses and digital items are connected under published terms.",
     "The representative is responsible for operations. Telegram, WhatsApp, and email are planned support channels. Individual services will be announced when their details are finalized. Token supply, security, digital items, and operating resources remain planning standards. The representative, business information, and official email appear in this document; Telegram and WhatsApp channels will be published after they are established."
   ],
   "chapters": [
@@ -11,19 +11,19 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SurfX aims to create an ecosystem that connects mobile games, utility apps, digital content, and stock/coin system trading tools to users around the world through a single account and a common token. Users can use the functions and products supported by connected services with the same token, and developers and creators can participate in a common payment, compensation, and settlement system."
+          "text": "SurfK aims to create an ecosystem that connects mobile games, utility apps, digital content, and stock/coin system trading tools to users around the world through a single account and a common token. Users can use the functions and products supported by connected services with the same token, and developers and creators can participate in a common payment, compensation, and settlement system."
         },
         {
           "type": "paragraph",
-          "text": "SurfX Token is the public utility token of this ecosystem. In this design, the token symbol is tentatively named SURFX, and BNB Smart Chain's BEP-20 standard is adopted as the first issuing chain. It is not a native coin of its own mainnet, but a token issued on an existing blockchain, and its role is distinct from BNB, a network fee asset."
+          "text": "SurfK Token is the public utility token of this ecosystem. In this design, the token symbol is tentatively named SURFK, and BNB Smart Chain's BEP-20 standard is adopted as the first issuing chain. It is not a native coin of its own mainnet, but a token issued on an existing blockchain, and its role is distinct from BNB, a network fee asset."
         },
         {
           "type": "paragraph",
-          "text": "SurfX's goal is to ensure that its systems and content sequentially support the same token usage interface. Users use supported game content, app features, creative works, and membership with SURFX, and approved rewards are managed in a common account. The actual payment and conversion range is specified according to the policy for each service, product, country, and app distribution route."
+          "text": "SurfK's goal is to ensure that its systems and content sequentially support the same token usage interface. Users use supported game content, app features, creative works, and membership with SURFK, and approved rewards are managed in a common account. The actual payment and conversion range is specified according to the policy for each service, product, country, and app distribution route."
         },
         {
           "type": "paragraph",
-          "text": "SurfX's growth is evaluated through the quality of services that users repeatedly seek, the experience of using multiple apps, and the actual settlement value returned to developers rather than the increase in new token buyers. Expanding the number of uses increases the reasons to use the token, but does not guarantee token price or market liquidity."
+          "text": "SurfK's growth is evaluated through the quality of services that users repeatedly seek, the experience of using multiple apps, and the actual settlement value returned to developers rather than the increase in new token buyers. Expanding the number of uses increases the reasons to use the token, but does not guarantee token price or market liquidity."
         },
         {
           "type": "paragraph",
@@ -37,11 +37,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Waves symbolize new experiences that constantly arrive. Surfing is the act of choosing one experience, enjoying it, and moving on to the next experience. SurfX is designed to connect scattered digital activities such as playing a game, creating an image, using small tools in daily life, and sharing creative works into one flow."
+          "text": "Waves symbolize new experiences that constantly arrive. Surfing is the act of choosing one experience, enjoying it, and moving on to the next experience. SurfK is designed to connect scattered digital activities such as playing a game, creating an image, using small tools in daily life, and sharing creative works into one flow."
         },
         {
           "type": "paragraph",
-          "text": "Even if one game ends, the user's account, accumulated history, and supporting assets must be able to be used again in the next service. SurfX aims for an environment where users can move between services as if riding waves, while maintaining their experience and usage rights. This connection is implemented through the contract and interface of the actually linked service."
+          "text": "Even if one game ends, the user's account, accumulated history, and supporting assets must be able to be used again in the next service. SurfK aims for an environment where users can move between services as if riding waves, while maintaining their experience and usage rights. This connection is implemented through the contract and interface of the actually linked service."
         },
         {
           "type": "paragraph",
@@ -55,7 +55,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The person responsible for operating SurfX is its representative. The representative is ultimately responsible for service planning and launch, financial execution, token operation policy, user support, and incident response. Do not list a non-existent board of directors, foundation, full-time development team, or independent approval organization as the operating entity."
+          "text": "The person responsible for operating SurfK is its representative. The representative is ultimately responsible for service planning and launch, financial execution, token operation policy, user support, and incident response. Do not list a non-existent board of directors, foundation, full-time development team, or independent approval organization as the operating entity."
         },
         {
           "type": "table",
@@ -118,7 +118,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SurfX's target market is global and not limited to specific countries. Based on common accounts and token usage specifications, we prepare services in which users and developers from various countries can participate. Global orientation does not mean that all token features are approved for offer or sale in all countries."
+          "text": "SurfK's target market is global and not limited to specific countries. Based on common accounts and token usage specifications, we prepare services in which users and developers from various countries can participate. Global orientation does not mean that all token features are approved for offer or sale in all countries."
         },
         {
           "type": "paragraph",
@@ -144,7 +144,7 @@
         },
         {
           "type": "paragraph",
-          "text": "If it is difficult to know what rights points or vouchers from one app have in another app, users must manage balance and payment conditions separately for each service. The problem that SurfX aims to solve is this management burden. It provides a common wallet, product list, and clear conversion rules to make it easier to identify available goods."
+          "text": "If it is difficult to know what rights points or vouchers from one app have in another app, users must manage balance and payment conditions separately for each service. The problem that SurfK aims to solve is this management burden. It provides a common wallet, product list, and clear conversion rules to make it easier to identify available goods."
         },
         {
           "type": "heading",
@@ -152,7 +152,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When wallet creation, key storage, chain selection, fee preparation, and signature requests are concentrated on the first use, the original purpose of games and apps is obscured. SurfX proposes a method that allows general functions to be used first by logging into an account, and guides users step by step through the necessary procedures when holding or transferring on-chain assets."
+          "text": "When wallet creation, key storage, chain selection, fee preparation, and signature requests are concentrated on the first use, the original purpose of games and apps is obscured. SurfK proposes a method that allows general functions to be used first by logging into an account, and guides users step by step through the necessary procedures when holding or transferring on-chain assets."
         },
         {
           "type": "heading",
@@ -160,7 +160,7 @@
         },
         {
           "type": "paragraph",
-          "text": "If there is not enough content and services that users want to purchase compared to the speed at which rewards increase, the cost and sales burden of the reward program may increase. SurfX manages payment budget, actual service consumption, and operating cash flow together. We do not default to a design that creates an obligation to pay unlimited tokens solely through repeated participation."
+          "text": "If there is not enough content and services that users want to purchase compared to the speed at which rewards increase, the cost and sales burden of the reward program may increase. SurfK manages payment budget, actual service consumption, and operating cash flow together. We do not default to a design that creates an obligation to pay unlimited tokens solely through repeated participation."
         },
         {
           "type": "heading",
@@ -168,7 +168,7 @@
         },
         {
           "type": "paragraph",
-          "text": "If accounts, wallets, payments, compensation verification, and settlement are built separately for each service, the integration burden on a small team increases. SurfX Connect aims to provide these functions in a common interface. Developers can focus on the games and apps they are good at, and ecosystem integration can be implemented by following documented rules."
+          "text": "If accounts, wallets, payments, compensation verification, and settlement are built separately for each service, the integration burden on a small team increases. SurfK Connect aims to provide these functions in a common interface. Developers can focus on the games and apps they are good at, and ecosystem integration can be implemented by following documented rules."
         },
         {
           "type": "heading",
@@ -176,17 +176,17 @@
         },
         {
           "type": "paragraph",
-          "text": "Blockchain helps verify confirmed token transactions and contract status, but it does not automatically determine whether game scores are legitimate, ad engagement is real human behavior, or content copyright is legitimate. SurfX has separate operational responsibilities for server verification, fraud detection, dispute resolution, and personal information protection."
+          "text": "Blockchain helps verify confirmed token transactions and contract status, but it does not automatically determine whether game scores are legitimate, ad engagement is real human behavior, or content copyright is legitimate. SurfK has separate operational responsibilities for server verification, fraud detection, dispute resolution, and personal information protection."
         }
       ]
     },
     {
       "id": "chapter-06",
-      "title": "06 Why you need SurfX tokens",
+      "title": "06 Why you need SurfK tokens",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The function of one operator paying points in a single app can also be implemented with a general database. The reason SurfX uses tokens is to allow independent services, user wallets, creators, and partners to check transaction, reward, and settlement details based on common assets. If there is no demand for external service connection or asset transfer, the initial points are sufficient, so token issuance is carried out after confirming the actual connection demand."
+          "text": "The function of one operator paying points in a single app can also be implemented with a general database. The reason SurfK uses tokens is to allow independent services, user wallets, creators, and partners to check transaction, reward, and settlement details based on common assets. If there is no demand for external service connection or asset transfer, the initial points are sufficient, so token issuance is carried out after confirming the actual connection demand."
         },
         {
           "type": "heading",
@@ -194,7 +194,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SURFX provides a payment unit that can be commonly used for digital products of supported games, usage of utility apps, and passes for creative works and services. Developers can accept the same tokens and payment specifications while maintaining their own products and economic structures."
+          "text": "SURFK provides a payment unit that can be commonly used for digital products of supported games, usage of utility apps, and passes for creative works and services. Developers can accept the same tokens and payment specifications while maintaining their own products and economic structures."
         },
         {
           "type": "heading",
@@ -202,7 +202,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When the SURFX paid by the user is settled with the service provider and creator, it is possible to record how and to whom the transaction price is distributed. The campaign budget can also be executed according to pre-specified payment rules, and the execution results can be made public. The accuracy of off-chain verification results is complemented by operating procedures and audit systems."
+          "text": "When the SURFK paid by the user is settled with the service provider and creator, it is possible to record how and to whom the transaction price is distributed. The campaign budget can also be executed according to pre-specified payment rules, and the execution results can be made public. The accuracy of off-chain verification results is complemented by operating procedures and audit systems."
         },
         {
           "type": "heading",
@@ -210,7 +210,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SURFX compensation can be provided within a pre-secured budget for legal and permitted activities. In the longer term, we will look at features for content suggestions, developer support and participation in the community budget. Holding tokens does not automatically grant company shares, dividend claims, or guaranteed returns."
+          "text": "SURFK compensation can be provided within a pre-secured budget for legal and permitted activities. In the longer term, we will look at features for content suggestions, developer support and participation in the community budget. Holding tokens does not automatically grant company shares, dividend claims, or guaranteed returns."
         },
         {
           "type": "paragraph",
@@ -224,7 +224,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SurfX uses BNB Smart Chain. SURFX is designed with BEP-20 tokens issued by the chain. It simplifies supply management by leveraging Solidity-based development tools and operating with a single original token. [1][2]"
+          "text": "SurfK uses BNB Smart Chain. SURFK is designed with BEP-20 tokens issued by the chain. It simplifies supply management by leveraging Solidity-based development tools and operating with a single original token. [1][2]"
         },
         {
           "type": "paragraph",
@@ -242,11 +242,11 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The names, functions, sequence, and detailed schedule of individual launch services are currently being organized. SurfX Hub, Games, Tools, Trading, Market, Connect and Wave Pass below are tentative names that describe the functional division and expansion direction of the ecosystem, and are not a confirmed release list or services already in operation."
+          "text": "The names, functions, sequence, and detailed schedule of individual launch services are currently being organized. SurfK Hub, Games, Tools, Trading, Market, Connect and Wave Pass below are tentative names that describe the functional division and expansion direction of the ecosystem, and are not a confirmed release list or services already in operation."
         },
         {
           "type": "heading",
-          "text": "SurfX Hub"
+          "text": "SurfK Hub"
         },
         {
           "type": "paragraph",
@@ -254,7 +254,7 @@
         },
         {
           "type": "heading",
-          "text": "SurfX Games"
+          "text": "SurfK Games"
         },
         {
           "type": "paragraph",
@@ -266,15 +266,15 @@
         },
         {
           "type": "heading",
-          "text": "SurfX Tools"
+          "text": "SurfK Tools"
         },
         {
           "type": "paragraph",
-          "text": "It connects utility apps that help with actual tasks, such as photo and video editing, image conversion, file conversion, productivity tools, and AI assistant functions. Supported services allow SURFX to be used for specific usage or usage rights, such as premium templates, high-resolution output, throughput, and storage space. Service provision costs and usage limits are disclosed for each product."
+          "text": "It connects utility apps that help with actual tasks, such as photo and video editing, image conversion, file conversion, productivity tools, and AI assistant functions. Supported services allow SURFK to be used for specific usage or usage rights, such as premium templates, high-resolution output, throughput, and storage space. Service provision costs and usage limits are disclosed for each product."
         },
         {
           "type": "heading",
-          "text": "SurfX Market"
+          "text": "SurfK Market"
         },
         {
           "type": "paragraph",
@@ -282,7 +282,7 @@
         },
         {
           "type": "heading",
-          "text": "SurfX Connect"
+          "text": "SurfK Connect"
         },
         {
           "type": "paragraph",
@@ -298,15 +298,15 @@
         },
         {
           "type": "heading",
-          "text": "SurfX Trading"
+          "text": "SurfK Trading"
         },
         {
           "type": "paragraph",
-          "text": "This is a financial utility area that provides a system to automatically execute stock and coin trading conditions created by users after entering and verifying them. SurfX provides tools for condition setting, backtesting, mock trading, and API order execution for user-named accounts. SURFX is used for system usage fees, calculation volume, and automation tool usage fees, and the actual transaction principal is managed in an external securities company/exchange account in the user's name. Actual support markets, providers, and ordering functions are disclosed after verification of contracts, policies, and technology."
+          "text": "This is a financial utility area that provides a system to automatically execute stock and coin trading conditions created by users after entering and verifying them. SurfK provides tools for condition setting, backtesting, mock trading, and API order execution for user-named accounts. SURFK is used for system usage fees, calculation volume, and automation tool usage fees, and the actual transaction principal is managed in an external securities company/exchange account in the user's name. Actual support markets, providers, and ordering functions are disclosed after verification of contracts, policies, and technology."
         },
         {
           "type": "paragraph",
-          "text": "The list of released services includes the service name, provided functions, supported countries and distribution channels, products available for SURFX, required token quantity or quotation method, distinction between free and paid goods, and refund and termination conditions. Individual features are not treated as confirmed products available for purchase until the list and terms of use are made public."
+          "text": "The list of released services includes the service name, provided functions, supported countries and distribution channels, products available for SURFK, required token quantity or quotation method, distinction between free and paid goods, and refund and termination conditions. Individual features are not treated as confirmed products available for purchase until the list and terms of use are made public."
         }
       ]
     },
@@ -316,7 +316,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SurfX Trading only provides a system to automatically execute stock and coin transactions according to the trading conditions created by the user. Users directly set the transaction target, buy/sell conditions, order quantity, execution time, and stop conditions and approve automatic execution. The system checks whether the approved conditions are met, transmits the order to the user's securities company or exchange account, and records the execution status. Trading conditions and investment decisions are determined by the user, and SurfX does not provide or recommend investment strategies or make discretionary trading decisions on behalf of the user. Individual services and connection providers have not yet been confirmed, and this chapter is a development and operation standard."
+          "text": "SurfK Trading only provides a system to automatically execute stock and coin transactions according to the trading conditions created by the user. Users directly set the transaction target, buy/sell conditions, order quantity, execution time, and stop conditions and approve automatic execution. The system checks whether the approved conditions are met, transmits the order to the user's securities company or exchange account, and records the execution status. Trading conditions and investment decisions are determined by the user, and SurfK does not provide or recommend investment strategies or make discretionary trading decisions on behalf of the user. Individual services and connection providers have not yet been confirmed, and this chapter is a development and operation standard."
         },
         {
           "type": "heading",
@@ -367,13 +367,13 @@
         },
         {
           "type": "heading",
-          "text": "Distinction between SURFX usage and trading principal"
+          "text": "Distinction between SURFK usage and trading principal"
         },
         {
           "type": "table",
           "rows": [
             [
-              "SURFX Used Items",
+              "SURFK Used Items",
               "Scope of use right"
             ],
             [
@@ -400,15 +400,15 @@
         },
         {
           "type": "paragraph",
-          "text": "SURFX is used in return for using tools and functions, and is not used as principal for buying or selling stocks or coins, dividends on investment profits, compensation for losses, or shares in joint investments. The user's actual trading funds and assets are managed in an external securities company or exchange account in the user's name and are not combined with SurfX's compensation and operating treasury. Holding tokens or paying fees for using tools does not guarantee profits or specific transactions."
+          "text": "SURFK is used in return for using tools and functions, and is not used as principal for buying or selling stocks or coins, dividends on investment profits, compensation for losses, or shares in joint investments. The user's actual trading funds and assets are managed in an external securities company or exchange account in the user's name and are not combined with SurfK's compensation and operating treasury. Holding tokens or paying fees for using tools does not guarantee profits or specific transactions."
         },
         {
           "type": "paragraph",
-          "text": "BSC is the basis for SURFX payments and token settlement. Stock orders are processed at supported securities firms and trading markets, and coin orders are processed at supported exchanges, without the premise of recording each order in the BSC. Even in a design where SurfX does not store the transaction principal, a separate review of responsibility and regulation regarding the security of API ordering authority and the form of provision is required."
+          "text": "BSC is the basis for SURFK payments and token settlement. Stock orders are processed at supported securities firms and trading markets, and coin orders are processed at supported exchanges, without the premise of recording each order in the BSC. Even in a design where SurfK does not store the transaction principal, a separate review of responsibility and regulation regarding the security of API ordering authority and the form of provision is required."
         },
         {
           "type": "paragraph",
-          "text": "The initial fee consists of a fixed-term or usage-based tool fee, and performance fees proportional to investment return and transaction amount are not included in the basic plan. External data usage fees, securities firm/exchange fees, and taxes are provided separately from SurfX service fees. The basic plan does not include a structure that links game rewards and Wave Points to actual transaction amounts or investment returns."
+          "text": "The initial fee consists of a fixed-term or usage-based tool fee, and performance fees proportional to investment return and transaction amount are not included in the basic plan. External data usage fees, securities firm/exchange fees, and taxes are provided separately from SurfK service fees. The basic plan does not include a structure that links game rewards and Wave Points to actual transaction amounts or investment returns."
         },
         {
           "type": "heading",
@@ -444,7 +444,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When subscription expires or SURFX balance is insufficient, new strategy implementation and new entry will be stopped and guided. The processing method for existing unfilled orders and positions is determined prior to activation. Existing assets are not arbitrarily liquidated simply for non-payment of fees, and users are guided to manage orders directly from external securities firms or exchanges and withdraw connection rights."
+          "text": "When subscription expires or SURFK balance is insufficient, new strategy implementation and new entry will be stopped and guided. The processing method for existing unfilled orders and positions is determined prior to activation. Existing assets are not arbitrarily liquidated simply for non-payment of fees, and users are guided to manage orders directly from external securities firms or exchanges and withdraw connection rights."
         },
         {
           "type": "heading",
@@ -456,7 +456,7 @@
         },
         {
           "type": "paragraph",
-          "text": "We do not assume that service integration for customers and price redistribution are permitted just because a public API exists. Korea Investment & Securities' official guide distinguishes between APIs for own assets and affiliated services for third parties, and specifies the contract for use and display of market information and the terms of affiliated services. This document is a technical reference material and does not mean that SurfX is linked or affiliated with Korea Investment & Securities or any other provider. [9][10]"
+          "text": "We do not assume that service integration for customers and price redistribution are permitted just because a public API exists. Korea Investment & Securities' official guide distinguishes between APIs for own assets and affiliated services for third parties, and specifies the contract for use and display of market information and the terms of affiliated services. This document is a technical reference material and does not mean that SurfK is linked or affiliated with Korea Investment & Securities or any other provider. [9][10]"
         },
         {
           "type": "paragraph",
@@ -524,7 +524,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The table above shows the range of uses that can be developed. The actual availability of each item can be confirmed through the release notice and product policy. When provided along with regular payments, discounts or benefits are set within operating resources, and all expenditures using SURFX are not expressed through token burning."
+          "text": "The table above shows the range of uses that can be developed. The actual availability of each item can be confirmed through the release notice and product policy. When provided along with regular payments, discounts or benefits are set within operating resources, and all expenditures using SURFK are not expressed through token burning."
         },
         {
           "type": "paragraph",
@@ -538,7 +538,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "SURFX is designed as a public utility token for systems and content provided or officially linked by SurfX. The general scope of use is payment for supported products, acquisition of content/function usage rights, receipt of confirmed compensation, transfer between wallets, and service settlement according to contract. Specific conditions of token use are subject to the published product list and program policy for each service."
+          "text": "SURFK is designed as a public utility token for systems and content provided or officially linked by SurfK. The general scope of use is payment for supported products, acquisition of content/function usage rights, receipt of confirmed compensation, transfer between wallets, and service settlement according to contract. Specific conditions of token use are subject to the published product list and program policy for each service."
         },
         {
           "type": "table",
@@ -553,7 +553,7 @@
             ],
             [
               "Use of products and features",
-              "By paying the displayed SURFX quantity, you acquire the right to use the period, usage amount, and content range of the product."
+              "By paying the displayed SURFK quantity, you acquire the right to use the period, usage amount, and content range of the product."
             ],
             [
               "Receive reward",
@@ -571,7 +571,7 @@
         },
         {
           "type": "paragraph",
-          "text": "In the stock/coin system trading area, you can acquire the right to use supported analysis, backtesting, user condition settings, and automation software. SURFX does not replace the trading principal of investment assets, and is consumed according to the published service usage conditions regardless of trading performance."
+          "text": "In the stock/coin system trading area, you can acquire the right to use supported analysis, backtesting, user condition settings, and automation software. SURFK does not replace the trading principal of investment assets, and is consumed according to the published service usage conditions regardless of trading performance."
         },
         {
           "type": "paragraph",
@@ -579,15 +579,15 @@
         },
         {
           "type": "paragraph",
-          "text": "Wave Points and unconfirmed participation scores are separated from SURFX. Accumulating points alone does not give you the right to claim a fixed amount of tokens or cash at any time, and rewards for which actual payment has been confirmed are processed according to the announced payment conditions. The balance, confirmation status, and processing history of tokens and vouchers are displayed separately."
+          "text": "Wave Points and unconfirmed participation scores are separated from SURFK. Accumulating points alone does not give you the right to claim a fixed amount of tokens or cash at any time, and rewards for which actual payment has been confirmed are processed according to the announced payment conditions. The balance, confirmation status, and processing history of tokens and vouchers are displayed separately."
         },
         {
           "type": "paragraph",
-          "text": "This standard does not grant SURFX any corporate equity, dividends, bonds, business profit distribution, principal repayment or fixed interest rights. Submitting community feedback is a participatory function for operational improvement and is distinct from the company's voting rights. Since the token name alone does not determine its legal nature, the results of review of the final issuance conditions and applicable laws are reflected in the disclosure."
+          "text": "This standard does not grant SURFK any corporate equity, dividends, bonds, business profit distribution, principal repayment or fixed interest rights. Submitting community feedback is a participatory function for operational improvement and is distinct from the company's voting rights. Since the token name alone does not determine its legal nature, the results of review of the final issuance conditions and applicable laws are reflected in the disclosure."
         },
         {
           "type": "paragraph",
-          "text": "Tokens held in personal wallets and points/vouchers displayed in the account have different storage structures. The on-chain balance is checked in the corresponding wallet and contract, and the balance in the internal ledger is managed with SurfX's service records. The scope of recovery in the event of a transmission error or loss of key and the scope beyond the operator's control are specified in the wallet instructions."
+          "text": "Tokens held in personal wallets and points/vouchers displayed in the account have different storage structures. The on-chain balance is checked in the corresponding wallet and contract, and the balance in the internal ledger is managed with SurfK's service records. The scope of recovery in the event of a transmission error or loss of key and the scope beyond the operator's control are specified in the wallet instructions."
         }
       ]
     },
@@ -597,7 +597,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The product integration that SurfX aims for is implemented through four functions: integrated inquiry, common payment, approved conversion, and joint settlement. There is a clear distinction between the function of showing balance and the right to actually exchange. This is a method of expanding the contact points that can be used as a common token while maintaining the characteristics of each service."
+          "text": "The product integration that SurfK aims for is implemented through four functions: integrated inquiry, common payment, approved conversion, and joint settlement. There is a clear distinction between the function of showing balance and the right to actually exchange. This is a method of expanding the contact points that can be used as a common token while maintaining the characteristics of each service."
         },
         {
           "type": "table",
@@ -608,7 +608,7 @@
               "Transition Principle"
             ],
             [
-              "SURFX",
+              "SURFK",
               "Check in your personal wallet and common account. Used for public payment and settlement of supported products",
               "On-chain transfers in scope of support. No cash back or price guarantee"
             ],
@@ -661,15 +661,15 @@
         },
         {
           "type": "paragraph",
-          "text": "As an illustrative assumption, let's say a user holds 100 SURFX in an environment where token functionality is allowed. If you spend 40 on templates and output from supported tools, 30 on cosmetic content for the game, and 20 on throughput from other tools, you'll have 10 SURFX left over. The numbers are not a promise of product price or exchange rates. The key is that one token balance can be divided and used to use the products of each service."
+          "text": "As an illustrative assumption, let's say a user holds 100 SURFK in an environment where token functionality is allowed. If you spend 40 on templates and output from supported tools, 30 on cosmetic content for the game, and 20 on throughput from other tools, you'll have 10 SURFK left over. The numbers are not a promise of product price or exchange rates. The key is that one token balance can be divided and used to use the products of each service."
         },
         {
           "type": "paragraph",
-          "text": "It is not defined that 1 point in game A and 1 coin in game B have the same value. Any external game goods cannot be linked without the consent of the issuer and a settlement agreement. The scope of integration is limited to the rights disclosed by services officially linked to SurfX."
+          "text": "It is not defined that 1 point in game A and 1 coin in game B have the same value. Any external game goods cannot be linked without the consent of the issuer and a settlement agreement. The scope of integration is limited to the rights disclosed by services officially linked to SurfK."
         },
         {
           "type": "paragraph",
-          "text": "Product integration is the scope of connecting the payment, usage rights, and compensation policies of SurfX services. Stocks, coins, deposits, and trading profits and losses from external securities firms and exchange accounts are excluded from the integrated conversion, and are clearly distinguished from service token balances on separate inquiry screens. Trading volume, number of orders, and investment returns are not used as game rewards or Wave Points payment criteria."
+          "text": "Product integration is the scope of connecting the payment, usage rights, and compensation policies of SurfK services. Stocks, coins, deposits, and trading profits and losses from external securities firms and exchange accounts are excluded from the integrated conversion, and are clearly distinguished from service token balances on separate inquiry screens. Trading volume, number of orders, and investment returns are not used as game rewards or Wave Points payment criteria."
         },
         {
           "type": "heading",
@@ -763,7 +763,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The cost of providing the service is calculated based on legal currency or a separate service accounting unit, and the basic method is to indicate the amount of SURFX required at the time of support payment. This is a policy that does not fix the value of SURFX, but makes the quantity and price of the product easier to understand."
+          "text": "The cost of providing the service is calculated based on legal currency or a separate service accounting unit, and the basic method is to indicate the amount of SURFK required at the time of support payment. This is a policy that does not fix the value of SURFK, but makes the quantity and price of the product easier to understand."
         },
         {
           "type": "paragraph",
@@ -775,7 +775,7 @@
         },
         {
           "type": "paragraph",
-          "text": "The partner agreement sets out the settlement assets, frequency and fees. SURFX settlement will be reviewed as a basis, but payments in fiat currency or other assets will be provided separately only to the extent that the necessary procedures are in place with legitimate providers. Avoid automatic full payments that do not take into account price changes, refund reserves, and external service costs."
+          "text": "The partner agreement sets out the settlement assets, frequency and fees. SURFK settlement will be reviewed as a basis, but payments in fiat currency or other assets will be provided separately only to the extent that the necessary procedures are in place with legitimate providers. Avoid automatic full payments that do not take into account price changes, refund reserves, and external service costs."
         },
         {
           "type": "paragraph",
@@ -789,7 +789,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The supply standard is an initial total issuance of 1,000,000,000 SURFX, prohibition of additional issuance after issuance, release of long-term installments, and disclosure of execution details. This white paper does not indicate that the token issuance or sale has already been completed. Before official distribution, the final specification, distribution wallet, and locking conditions are disclosed, and it is verified that the actual contract matches the public specification."
+          "text": "The supply standard is an initial total issuance of 1,000,000,000 SURFK, prohibition of additional issuance after issuance, release of long-term installments, and disclosure of execution details. This white paper does not indicate that the token issuance or sale has already been completed. Before official distribution, the final specification, distribution wallet, and locking conditions are disclosed, and it is verified that the actual contract matches the public specification."
         },
         {
           "type": "table",
@@ -800,11 +800,11 @@
             ],
             [
               "token name",
-              "SurfX Token"
+              "SurfK Token"
             ],
             [
               "token symbol",
-              "SURFX is a tentative name. Check for duplication and rights before confirmation."
+              "SURFK is a tentative name. Check for duplication and rights before confirmation."
             ],
             [
               "Initial chain and standard",
@@ -812,7 +812,7 @@
             ],
             [
               "Total initial issuance amount",
-              "1,000,000,000 SURFX"
+              "1,000,000,000 SURFK"
             ],
             [
               "decimal places",
@@ -913,7 +913,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The point of issuance is called TGE. The example initial release limit is proposed to be 50,000,000 SURFX, which is 5% of the total amount. The monthly release date is defined as the reference date of each month following the TGE. If there is no waiting period, it will be canceled for the first time after 1 month, 7 months for 6 months, and 13 months for 12 months. Even if compensation, support, and treasury quantities are released, they are executed according to the approved budget and unused quantities are stored."
+          "text": "The point of issuance is called TGE. The example initial release limit is proposed to be 50,000,000 SURFK, which is 5% of the total amount. The monthly release date is defined as the reference date of each month following the TGE. If there is no waiting period, it will be canceled for the first time after 1 month, 7 months for 6 months, and 13 months for 12 months. Even if compensation, support, and treasury quantities are released, they are executed according to the approved budget and unused quantities are stored."
         },
         {
           "type": "table",
@@ -988,11 +988,11 @@
         },
         {
           "type": "paragraph",
-          "text": "As an illustrative example, even if there are 2,000,000 tokens that can be released and used in a month, if the approved reward budget is 1,200,000 and the actual resources secured for the campaign are 1,000,000, the payment limit is less than 1,000,000. These figures are operational examples and are not actual monthly payment plans. Campaign costs received with other assets are recognized as token budget after securing SURFX resources separately."
+          "text": "As an illustrative example, even if there are 2,000,000 tokens that can be released and used in a month, if the approved reward budget is 1,200,000 and the actual resources secured for the campaign are 1,000,000, the payment limit is less than 1,000,000. These figures are operational examples and are not actual monthly payment plans. Campaign costs received with other assets are recognized as token budget after securing SURFK resources separately."
         },
         {
           "type": "paragraph",
-          "text": "In the budget proportional method, payment is made according to the proportion of effective contribution points determined in advance. For example, if the allocated budget for a program is 100,000 SURFX and a user who is recognized with 1% of the total valid score is subject to a maximum allocation of 1,000 SURFX before the personal cap is applied. Just because the number of people increases, the total amount of program payments does not increase indefinitely. Rules for processing non-achievement, deductions from illegal use, and remaining budget are also disclosed prior to participation."
+          "text": "In the budget proportional method, payment is made according to the proportion of effective contribution points determined in advance. For example, if the allocated budget for a program is 100,000 SURFK and a user who is recognized with 1% of the total valid score is subject to a maximum allocation of 1,000 SURFK before the personal cap is applied. Just because the number of people increases, the total amount of program payments does not increase indefinitely. Rules for processing non-achievement, deductions from illegal use, and remaining budget are also disclosed prior to participation."
         },
         {
           "type": "heading",
@@ -1061,7 +1061,7 @@
         },
         {
           "type": "paragraph",
-          "text": "When a system trading tool is released, analysis and mock trading subscriptions, backtest throughput, and approved automation tool usage fees are reviewed as revenue sources. Data licensing, price receipt, calculation, secure storage, order status monitoring, and failure response costs are managed separately as service costs. Users' trading principal and profits are not included in SurfX's operating resources or token compensation resources."
+          "text": "When a system trading tool is released, analysis and mock trading subscriptions, backtest throughput, and approved automation tool usage fees are reviewed as revenue sources. Data licensing, price receipt, calculation, secure storage, order status monitoring, and failure response costs are managed separately as service costs. Users' trading principal and profits are not included in SurfK's operating resources or token compensation resources."
         }
       ]
     },
@@ -1159,7 +1159,7 @@
         },
         {
           "type": "paragraph",
-          "text": "We examine AI image and video assistant tools, automatic editing, creative management, and collaboration functions as future integration candidates. Computation and storage space that incur costs are measured by the amount of service provided, and SURFX takes on the role of linking use and settlement. Rather than the name of AI or blockchain technology itself, it is judged by the results completed by the user and the utility they are willing to pay for."
+          "text": "We examine AI image and video assistant tools, automatic editing, creative management, and collaboration functions as future integration candidates. Computation and storage space that incur costs are measured by the amount of service provided, and SURFK takes on the role of linking use and settlement. Rather than the name of AI or blockchain technology itself, it is judged by the results completed by the user and the utility they are willing to pay for."
         },
         {
           "type": "heading",
@@ -1167,7 +1167,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SurfX's future orientation lies in the structure that allows goods bundled in one service to be used in multiple experiences, the development specifications that partners can participate in, and the settlement details that users can check. As the ecosystem grows, the possible roles and touch points for public tokens may increase, but the results will depend on product execution, actual demand, costs and market conditions."
+          "text": "SurfK's future orientation lies in the structure that allows goods bundled in one service to be used in multiple experiences, the development specifications that partners can participate in, and the settlement details that users can check. As the ecosystem grows, the possible roles and touch points for public tokens may increase, but the results will depend on product execution, actual demand, costs and market conditions."
         }
       ]
     },
@@ -1293,11 +1293,11 @@
         },
         {
           "type": "paragraph",
-          "text": "Apple's app review guidelines follow the principle of in-app payment for payment of digital functions and content, and limit the unlocking of functions through cryptocurrency or wallet and the compensation of some cryptocurrency tasks. Allowed routes and exceptions for each country and storefront must be checked separately. Therefore, we do not assume that SURFX can immediately open the paid features of all iOS apps. [5]"
+          "text": "Apple's app review guidelines follow the principle of in-app payment for payment of digital functions and content, and limit the unlocking of functions through cryptocurrency or wallet and the compensation of some cryptocurrency tasks. Allowed routes and exceptions for each country and storefront must be checked separately. Therefore, we do not assume that SURFK can immediately open the paid features of all iOS apps. [5]"
         },
         {
           "type": "paragraph",
-          "text": "Google Play regulates the reporting of sales and acquisition functions of tokenized digital assets and limits on promotion of profit potential. SurfX classifies functions by distribution country and channel and checks actual screening conditions. Using the web or PWA doesn't mean you're free from the laws of your country. [6]"
+          "text": "Google Play regulates the reporting of sales and acquisition functions of tokenized digital assets and limits on promotion of profit potential. SurfK classifies functions by distribution country and channel and checks actual screening conditions. Using the web or PWA doesn't mean you're free from the laws of your country. [6]"
         },
         {
           "type": "heading",
@@ -1321,7 +1321,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SURFX is not a product designed to grant company shares or bonds, and does not provide fixed returns, guaranteed principal, guaranteed listing, or regular redemption rights. Actual rights and legal classifications are confirmed in accordance with the final published document and applicable law. Major changes to the white paper are disclosed through version and change history."
+          "text": "SURFK is not a product designed to grant company shares or bonds, and does not provide fixed returns, guaranteed principal, guaranteed listing, or regular redemption rights. Actual rights and legal classifications are confirmed in accordance with the final published document and applicable law. Major changes to the white paper are disclosed through version and change history."
         },
         {
           "type": "paragraph",
@@ -1329,7 +1329,7 @@
         },
         {
           "type": "paragraph",
-          "text": "System trading involves the risk of loss of investment principal, over-optimization of strategy, incorrect data, order delay, duplication, non-execution, exchange/securities company failure, and API authority leakage. The performance of backtests and mock trading does not guarantee actual trading results. Subscription fees, SURFX payments and investment profits and losses are distinguished, and the responsibilities of system functions and the roles of user settings and external providers are specified in the terms and conditions."
+          "text": "System trading involves the risk of loss of investment principal, over-optimization of strategy, incorrect data, order delay, duplication, non-execution, exchange/securities company failure, and API authority leakage. The performance of backtests and mock trading does not guarantee actual trading results. Subscription fees, SURFK payments and investment profits and losses are distinguished, and the responsibilities of system functions and the roles of user settings and external providers are specified in the terms and conditions."
         }
       ]
     },
@@ -1384,7 +1384,7 @@
         },
         {
           "type": "paragraph",
-          "text": "SurfX aims for an ecosystem where one public token connects the use and settlement of multiple services. Within the operating structure for which the representative is responsible, supported products, rights, financial resources, and execution details are clearly disclosed and services are expanded to meet actual user demand."
+          "text": "SurfK aims for an ecosystem where one public token connects the use and settlement of multiple services. Within the operating structure for which the representative is responsible, supported products, rights, financial resources, and execution details are clearly disclosed and services are expanded to meet actual user demand."
         }
       ]
     },

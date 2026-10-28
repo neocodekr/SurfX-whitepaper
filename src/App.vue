@@ -84,7 +84,7 @@ function isExternalLink(value) { return /^https:\/\/\S+$/.test(value) }
 
 watch([lang, pageTitle], () => {
   window.document.documentElement.lang = lang.value
-  window.document.title = pageTitle.value + ' | SurfX Whitepaper'
+  window.document.title = pageTitle.value + ' | SurfK Whitepaper'
 }, { immediate: true })
 onMounted(() => {
   window.addEventListener('hashchange', syncRoute)
@@ -101,7 +101,7 @@ onUnmounted(() => {
   <div class="docs-shell">
     <header class="docs-header">
       <button class="menu-button" type="button" :aria-label="lang === 'ko' ? '목차 열기' : 'Open navigation'" @click="menuOpen = !menuOpen">☰</button>
-      <a class="docs-brand" href="#/intro" @click.prevent="navigate('intro')"><span class="brand-wave">∿</span><span>Surf<span class="brand-accent">X</span></span><span class="brand-divider"></span><span class="brand-document">Whitepaper</span></a>
+      <a class="docs-brand" href="#/intro" @click.prevent="navigate('intro')"><span class="brand-wave">∿</span><span>Surf<span class="brand-accent">K</span></span><span class="brand-divider"></span><span class="brand-document">Whitepaper</span></a>
       <div class="header-tools">
         <button class="search-trigger" type="button" @click="openSearch"><span class="search-icon">⌕</span><span>{{ lang === 'ko' ? '백서 검색' : 'Search documentation' }}</span><kbd>Ctrl K</kbd></button>
         <div class="language-switch" :aria-label="lang === 'ko' ? '언어 선택' : 'Choose language'"><button type="button" :class="{ active: lang === 'ko' }" :aria-pressed="lang === 'ko'" @click="changeLanguage('ko')">KO</button><span>/</span><button type="button" :class="{ active: lang === 'en' }" :aria-pressed="lang === 'en'" @click="changeLanguage('en')">EN</button></div>
@@ -112,7 +112,7 @@ onUnmounted(() => {
     <div v-if="menuOpen" class="mobile-shade" @click="menuOpen = false"></div>
     <aside ref="sidebar" class="docs-sidebar" :class="{ open: menuOpen }" :aria-label="lang === 'ko' ? '백서 목차' : 'Whitepaper navigation'">
       <div class="sidebar-inner">
-        <p class="sidebar-caption">SURFX DOCUMENTATION</p>
+        <p class="sidebar-caption">SURFK DOCUMENTATION</p>
         <button class="nav-intro" type="button" :class="{ selected: pageId === 'intro' }" @click="navigate('intro')"><span class="nav-icon">⌂</span>{{ lang === 'ko' ? '소개' : 'Introduction' }}</button>
         <section v-for="group in groups" :key="group.id" class="nav-group">
           <h2><span class="nav-icon">{{ group.icon }}</span>{{ lang === 'ko' ? group.ko : group.en }}</h2>
@@ -126,8 +126,8 @@ onUnmounted(() => {
         <div class="breadcrumb"><span>{{ currentGroup ? (lang === 'ko' ? currentGroup.ko : currentGroup.en) : (lang === 'ko' ? '개요' : 'OVERVIEW') }}</span><span class="breadcrumb-slash">/</span><span>{{ pageTitle }}</span></div>
 
         <article v-if="!currentChapter" class="article">
-          <div class="article-heading"><p class="article-kicker">SURFX WHITEPAPER · V0.2</p><h1>{{ pageTitle }}</h1><p class="article-lede">{{ lang === 'ko' ? 'SurfX 생태계와 공용 토큰의 설계, 운영 원칙과 단계별 계획' : 'The ecosystem, shared token design, operating principles, and phased plan for SurfX.' }}</p></div>
-          <div class="cover-art"><div><span>THE NEXT WAVE OF CONNECTED EXPERIENCES</span><strong>SurfX<br>Whitepaper</strong><small>October 2026 · Version 0.2</small></div><img :src="asset('wave.webp')" alt="" /></div>
+          <div class="article-heading"><p class="article-kicker">SURFK WHITEPAPER · V0.2</p><h1>{{ pageTitle }}</h1><p class="article-lede">{{ lang === 'ko' ? 'SurfK 생태계와 공용 토큰의 설계, 운영 원칙과 단계별 계획' : 'The ecosystem, shared token design, operating principles, and phased plan for SurfK.' }}</p></div>
+          <div class="cover-art"><div><span>THE NEXT WAVE OF CONNECTED EXPERIENCES</span><strong>SurfK<br>Whitepaper</strong><small>October 2026 · Version 0.2</small></div><img :src="asset('wave-k.png')" alt="" /></div>
           <div class="document-notice"><strong>{{ lang === 'ko' ? '발행 준비 기준안' : 'Planning baseline' }}</strong><p>{{ lang === 'ko' ? '이 문서는 토큰 발행이나 서비스 출시가 완료되었다는 뜻이 아닙니다. 실제 배포와 운영 정보는 별도로 확인해야 합니다.' : 'This document does not state that token issuance or service launches are complete. Deployment and operating details require separate confirmation.' }}</p></div>
           <section class="intro-copy"><h2>{{ lang === 'ko' ? '프로젝트 개요' : 'Project overview' }}</h2><p v-for="paragraph in (lang === 'ko' ? source.introduction : englishSource.introduction)" :key="paragraph">{{ paragraph }}</p></section>
           <div class="intro-highlights"><div><span>25</span><small>{{ lang === 'ko' ? '개 장' : 'Chapters' }}</small></div><div><span>14</span><small>{{ lang === 'ko' ? '개 표' : 'Source tables' }}</small></div><div><span>v0.2</span><small>{{ lang === 'ko' ? '운영 정책 반영본' : 'Planning draft' }}</small></div></div>
@@ -148,9 +148,9 @@ onUnmounted(() => {
         </article>
 
         <footer class="article-footer">
-          <img :src="asset('surfx-neocode-collab.png')" alt="SurfX × NEOCODE" />
+          <img :src="asset('surfk-neocode-collab.png')" alt="SurfK × NEOCODE" />
           <div class="footer-details"><strong>Neocode</strong><span>Business Type: Company · Representative: Eunseong Park · Business Registration No. 422-29-01059</span><span>E-Commerce Registration No. 2025-Seoul Guro-0315 · D-U-N-S No. 963437563</span><span>Suite 702, 36, Gyeongin-ro 20na-gil, Guro-gu, Seoul, Republic of Korea</span><span>Email: <a href="mailto:neocode.kr@gmail.com">neocode.kr@gmail.com</a> · Customer Support: <a href="tel:+821086741663">010-8674-1663</a></span></div>
-          <div class="footer-bottom"><span>© 2026 SurfX × NEOCODE</span><a href="https://www.surfx-protocol.com/">{{ lang === 'ko' ? 'SurfX 메인 사이트' : 'SurfX main site' }} ↗</a></div>
+          <div class="footer-bottom"><span>© 2026 SurfK × NEOCODE</span><a href="https://www.surfx-protocol.com/">{{ lang === 'ko' ? 'SurfK 메인 사이트' : 'SurfK main site' }} ↗</a></div>
         </footer>
       </main>
 
