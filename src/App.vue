@@ -1,163 +1,171 @@
 <script setup>
-import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
+import source from './whitepaper.ko.json'
+import { chapterMeta, groups } from './whitepaperMeta'
 
-const asset = (name) => `${import.meta.env.BASE_URL}${name}`
+const asset = (name) => import.meta.env.BASE_URL + name
 const lang = ref(localStorage.getItem('surfx-language') === 'ko' ? 'ko' : 'en')
-const route = ref(window.location.hash === '#/' ? 'home' : 'whitepaper')
+const pageId = ref(readPageId())
 const menuOpen = ref(false)
+const sidebar = ref(null)
+const searchOpen = ref(false)
+const searchQuery = ref('')
+const searchInput = ref(null)
+const activeAnchor = ref('')
 
-const content = {
-  ko: {
-    nav: ['소개', '경험', '앱 미리보기', '백서'],
-    explore: 'SurfX 알아보기',
-    eyebrow: 'LEARN · EARN · SURF',
-    hero1: '작은 도전,', hero2: '새로운 파도.',
-    heroBody: '매일 배우고, 가볍게 도전하고, 나만의 성장을 기록하세요. SurfX와 함께 오늘의 파도를 시작해 보세요.',
-    heroCta: '경험 살펴보기', paperCta: '백서 읽기',
-    strip: ['매일의 출석', '한 문제의 배움', '함께하는 크루', '나만의 보드'],
-    aboutKicker: 'THE SURFX EXPERIENCE', aboutTitle: '매일 돌아오고 싶은\n작은 경험들',
-    aboutBody: 'SurfX는 학습, 미션, 커뮤니티를 하나의 흐름으로 연결합니다. 하루에 몇 분씩 쌓아가는 활동이 더 큰 여정의 시작이 됩니다.',
-    steps: [
-      { n: '01', icon: '◷', title: '매일 접속하기', body: '출석 체크와 24시간 서핑으로 나만의 리듬을 만들어요.' },
-      { n: '02', icon: '✳', title: '배우고 도전하기', body: '블록체인 퀴즈와 짧은 학습으로 새로운 개념을 익혀요.' },
-      { n: '03', icon: '↗', title: '함께 성장하기', body: '크루와 연결하고 포인트를 모아 나만의 보드를 키워요.' },
-    ],
-    featureKicker: 'ONE DAY, ONE WAVE', featureTitle: '하루를 더 흥미롭게\n만드는 방법',
-    featureBody: '출석, 서핑, 퀴즈와 미션. 앱 안의 작은 행동이 한눈에 보이는 진행 상황으로 이어집니다.',
-    featureItems: ['일일 출석과 연속 기록', '배우면서 푸는 블록체인 퀴즈', '친구와 함께하는 크루', '포인트로 성장하는 보드'],
-    demo: '현재 앱의 포인트와 보상은 기기에 저장되는 체험 데이터입니다.',
-    appKicker: 'IN YOUR HANDS', appTitle: '파도를 손안에.',
-    appBody: '오늘의 서핑을 시작하고, 미션을 고르고, 크루와 함께하세요. SurfX의 모바일 경험을 미리 만나보세요.',
-    screens: ['오늘의 홈', '미션과 학습', '함께하는 크루'],
-    ctaKicker: 'READY TO RIDE?', ctaTitle: '다음 파도를\n함께 만들어가요.', ctaBody: 'SurfX가 그리고 있는 경험과 현재 구현 범위를 백서에서 자세히 살펴보세요.',
-    footerDesc: '매일 배우고, 도전하고, 나만의 파도를 만드는 모바일 경험.',
-    top: '맨 위로',
-    paper: {
-      label: 'SURFX DOCUMENTATION', title: 'SurfX 백서', intro: 'SurfX의 제품 경험과 현재 구현 범위를 설명하는 문서입니다. 이 문서는 앱의 상태를 기준으로 작성된 제품 개요이며, 투자 제안이나 토큰 발행 계획이 아닙니다.',
-      sections: [
-        { id: 'overview', title: '01. 개요', paragraphs: ['SurfX는 매일 반복할 수 있는 작은 참여 경험을 중심에 둔 모바일 앱 프로젝트입니다. 서핑 타이머, 출석 체크, 학습과 퀴즈, 크루와 보드 성장을 하나의 여정으로 묶었습니다.', '목표는 복잡한 개념을 가볍게 배우고, 일상의 활동을 시각적인 성장 경험으로 연결하는 것입니다.'] },
-        { id: 'experience', title: '02. 사용자 경험', paragraphs: ['사용자는 하루의 서핑을 시작하고, 출석을 완료하고, 블록체인 학습과 퀴즈에 참여할 수 있습니다. 미션, 크루, 랭킹, 보드 화면은 일일 참여와 진행 상황을 한눈에 보여줍니다.', '앱은 한국어와 영어를 지원하며, 언어별 블록체인 퀴즈 문제 은행을 내장하고 있습니다.'] },
-        { id: 'rewards', title: '03. 포인트와 보드', paragraphs: ['현재 앱의 포인트, 출석, 학습, 퀴즈 결과와 보드 레벨은 기기에 저장되는 데모 상태입니다. 일일 보상은 같은 날 반복 수령되지 않도록 설계되어 있습니다.', '포인트는 앱 안에서 보드 성장 체험에 사용됩니다. 실제 가치, 현금화, 토큰 교환 또는 블록체인 자산을 의미하지 않습니다.'] },
-        { id: 'architecture', title: '04. 현재 구현 범위', paragraphs: ['Android 앱은 Jetpack Compose로 구현되어 있으며 환영, 홈, 출석, 미션, 학습, 퀴즈, 크루, 초대, 지갑, 보드, 랭킹, 프로필 화면을 포함합니다.', '현재 서버 계정, 실시간 보상 동기화, 토큰 지갑 연결, 온체인 보상 지급은 구현되지 않았습니다. 이 기능을 제공하려면 인증, 데이터 저장, 부정 사용 방지와 운영 정책을 별도로 설계해야 합니다.'] },
-        { id: 'principles', title: '05. 제품 원칙', paragraphs: ['짧고 명확한 일일 활동, 이해하기 쉬운 진행 상황, 두 언어에서 일관된 경험을 제품 설계의 기준으로 삼습니다.', '보상이나 수치가 예시인 경우 이를 명확히 표시하고, 실제 기능의 범위를 과장하지 않습니다.'] },
-        { id: 'faq', title: '06. 안내', paragraphs: ['이 문서는 SurfX 모바일 앱과 웹사이트의 제품 소개를 위한 초안입니다. 기능, 화면, 정책은 개발과 검증 과정에서 달라질 수 있습니다.', '문의와 협업 관련 정보는 프로젝트 GitHub 저장소를 통해 확인할 수 있습니다.'] },
-      ],
-    },
-  },
-  en: {
-    nav: ['About', 'Experience', 'App preview', 'Whitepaper'], explore: 'Explore SurfX',
-    eyebrow: 'LEARN · EARN · SURF', hero1: 'Small steps.', hero2: 'New waves.',
-    heroBody: 'Learn something new, take on a simple challenge, and see your progress grow. Start your wave with SurfX today.',
-    heroCta: 'Explore the experience', paperCta: 'Read the whitepaper',
-    strip: ['Daily check-ins', 'A little learning', 'A crew to share with', 'Your own board'],
-    aboutKicker: 'THE SURFX EXPERIENCE', aboutTitle: 'Small experiences\nworth returning to',
-    aboutBody: 'SurfX brings learning, missions, and community into one flow. A few minutes of activity each day can be the start of a bigger journey.',
-    steps: [
-      { n: '01', icon: '◷', title: 'Show up daily', body: 'Build your own rhythm with check-ins and a 24-hour surf.' },
-      { n: '02', icon: '✳', title: 'Learn and play', body: 'Explore new ideas through short lessons and blockchain quizzes.' },
-      { n: '03', icon: '↗', title: 'Grow together', body: 'Connect with a crew, collect points, and level up your board.' },
-    ],
-    featureKicker: 'ONE DAY, ONE WAVE', featureTitle: 'A more rewarding\ndaily rhythm',
-    featureBody: 'Check-ins, surfing, quizzes, and missions turn small actions into visible progress inside the app.',
-    featureItems: ['Daily check-ins and streaks', 'Learn through blockchain quizzes', 'A crew to ride with', 'A board that grows with points'],
-    demo: 'Points and rewards in the current app are demo data stored on your device.',
-    appKicker: 'IN YOUR HANDS', appTitle: 'A wave in your pocket.',
-    appBody: 'Start today’s surf, choose a mission, and connect with your crew. Take a look at the SurfX mobile experience.',
-    screens: ['Your daily home', 'Missions and learning', 'Your crew'],
-    ctaKicker: 'READY TO RIDE?', ctaTitle: 'Let’s make the\nnext wave together.', ctaBody: 'Explore the SurfX product experience and its current scope in the whitepaper.',
-    footerDesc: 'A mobile experience for learning, exploring, and making your own wave every day.', top: 'Back to top',
-    paper: {
-      label: 'SURFX DOCUMENTATION', title: 'SurfX Whitepaper', intro: 'A guide to the SurfX product experience and its current implementation. This is a product overview based on the app’s current state, not an investment offer or token issuance plan.',
-      sections: [
-        { id: 'overview', title: '01. Overview', paragraphs: ['SurfX is a mobile app project built around small, repeatable daily experiences. It brings a surf timer, check-ins, learning and quizzes, crews, and board progression into one journey.', 'Its goal is to make new concepts approachable and turn everyday participation into a visible sense of progress.'] },
-        { id: 'experience', title: '02. User experience', paragraphs: ['Users can start a daily surf, complete a check-in, and take part in blockchain lessons and quizzes. Missions, crew, ranking, and board screens bring activities and progress together.', 'The app supports Korean and English and bundles a blockchain quiz bank for each language.'] },
-        { id: 'rewards', title: '03. Points and boards', paragraphs: ['Points, check-ins, lesson and quiz outcomes, and board levels are currently demo state saved on the device. Daily rewards are designed to prevent repeated claims on the same day.', 'Points are used for board progression inside the app. They do not represent real value, cash redemption, token conversion, or blockchain assets.'] },
-        { id: 'architecture', title: '04. Current implementation', paragraphs: ['The Android app is built with Jetpack Compose and includes welcome, home, check-in, missions, learning, quiz, crew, invite, wallet, board, ranking, and profile screens.', 'Server accounts, live reward synchronization, token wallet connections, and on-chain payouts are not implemented. Those features would require separate authentication, storage, abuse prevention, and operating policies.'] },
-        { id: 'principles', title: '05. Product principles', paragraphs: ['Short, clear daily actions, understandable progress, and a consistent experience across both languages guide the product design.', 'Example rewards and figures should be identified clearly, and the scope of live functionality should be described accurately.'] },
-        { id: 'faq', title: '06. Notes', paragraphs: ['This document introduces the SurfX mobile app and website. Features, screens, and policies may change during development and validation.', 'For project information or collaboration, visit the GitHub repository.'] },
-      ],
-    },
-  },
+const englishIntro = [
+  'SurfX proposes to connect mobile games, utility apps, and tools for user-directed stock and crypto system trading through one account and a shared token. The whitepaper sets out common payment and settlement rules for users, developers, and creators.',
+  'SURFX is proposed as a BEP-20 utility token on BNB Smart Chain. App-specific scores and points remain tied to their services; only approved uses and conversions would follow published terms.',
+  'This is a planning document, version 0.2. Service launches, token issuance, contract deployment, funding, audits, and official support details require separate confirmation and disclosure.',
+]
+
+function readPageId() {
+  const id = window.location.hash.replace(/^#\/?/, '')
+  return source.chapters.some((chapter) => chapter.id === id) ? id : 'intro'
 }
+function cleanTitle(chapter) { return chapter.title.replace(/^\d+\s*/, '') }
+const currentIndex = computed(() => source.chapters.findIndex((chapter) => chapter.id === pageId.value))
+const currentChapter = computed(() => source.chapters[currentIndex.value] || null)
+const currentMeta = computed(() => currentIndex.value < 0 ? null : chapterMeta[currentIndex.value])
+const currentGroup = computed(() => groups.find((group) => group.chapters.includes(currentIndex.value + 1)) || null)
+const pageTitle = computed(() => currentChapter.value ? (lang.value === 'ko' ? cleanTitle(currentChapter.value) : currentMeta.value.en) : (lang.value === 'ko' ? '소개' : 'Introduction'))
+const toc = computed(() => currentChapter.value ? currentChapter.value.blocks.map((block, index) => ({ ...block, index })).filter((block) => block.type === 'heading') : [])
+const previousPage = computed(() => currentIndex.value > 0 ? source.chapters[currentIndex.value - 1] : null)
+const nextPage = computed(() => currentIndex.value < source.chapters.length - 1 ? source.chapters[currentIndex.value + 1] : null)
+const searchResults = computed(() => {
+  const query = searchQuery.value.trim().toLocaleLowerCase()
+  if (!query) return []
+  return source.chapters.map((chapter, index) => ({
+    ...chapter,
+    englishTitle: chapterMeta[index].en,
+    summary: chapterMeta[index].summary,
+    searchable: [chapter.title, chapterMeta[index].en, chapterMeta[index].summary, ...chapter.blocks.flatMap((block) => block.type === 'table' ? block.rows.flat() : [block.text])].join(' ').toLocaleLowerCase(),
+  })).filter((chapter) => chapter.searchable.includes(query)).slice(0, 10)
+})
 
-const t = computed(() => content[lang.value])
-function changeLanguage(value) { lang.value = value; localStorage.setItem('surfx-language', value) }
-function syncRoute() { route.value = window.location.hash === '#/' ? 'home' : 'whitepaper'; menuOpen.value = false; window.scrollTo({ top: 0, behavior: 'instant' }) }
-function navigate(target) { window.location.hash = target; syncRoute() }
-function goTo(id) {
-  if (route.value === 'whitepaper') { window.location.href = 'https://www.surfx-protocol.com/#/'; return }
-  if (route.value !== 'home') { navigate('/'); setTimeout(() => document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }), 40) }
-  else document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
+function navigate(id) {
+  window.location.hash = '#/' + id
+  pageId.value = id
   menuOpen.value = false
+  searchOpen.value = false
+  searchQuery.value = ''
+  activeAnchor.value = ''
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  revealSelected()
 }
-function scrollPaper(id) { document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' }) }
-watch(lang, value => { document.documentElement.lang = value; document.title = value === 'ko' ? 'SurfX — 작은 도전, 새로운 파도' : 'SurfX — Small steps. New waves.' })
-onMounted(() => { window.addEventListener('hashchange', syncRoute); document.documentElement.lang = lang.value })
-onUnmounted(() => window.removeEventListener('hashchange', syncRoute))
+function syncRoute() {
+  pageId.value = readPageId()
+  menuOpen.value = false
+  activeAnchor.value = ''
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  revealSelected()
+}
+function revealSelected() {
+  nextTick(() => {
+    const selected = sidebar.value?.querySelector('button.selected')
+    if (selected && sidebar.value) sidebar.value.scrollTop = Math.max(0, selected.offsetTop - sidebar.value.clientHeight * 0.42)
+  })
+}
+function changeLanguage(value) {
+  lang.value = value
+  localStorage.setItem('surfx-language', value)
+}
+function openSearch() {
+  searchOpen.value = true
+  nextTick(() => searchInput.value?.focus())
+}
+function jumpTo(index) {
+  activeAnchor.value = 'section-' + index
+  window.document.getElementById(activeAnchor.value)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+}
+function jumpToSelector(selector) { window.document.querySelector(selector)?.scrollIntoView({ behavior: 'smooth' }) }
+function onKeydown(event) {
+  if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === 'k') {
+    event.preventDefault()
+    openSearch()
+  }
+  if (event.key === 'Escape') searchOpen.value = false
+}
+function isExternalLink(value) { return /^https:\/\/\S+$/.test(value) }
+
+watch([lang, pageTitle], () => {
+  window.document.documentElement.lang = lang.value
+  window.document.title = pageTitle.value + ' | SurfX Whitepaper'
+}, { immediate: true })
+onMounted(() => {
+  window.addEventListener('hashchange', syncRoute)
+  window.addEventListener('keydown', onKeydown)
+  revealSelected()
+})
+onUnmounted(() => {
+  window.removeEventListener('hashchange', syncRoute)
+  window.removeEventListener('keydown', onKeydown)
+})
 </script>
 
 <template>
-  <div class="site-shell">
-    <header class="site-header" :class="{ 'paper-header': route === 'whitepaper' }">
-      <a class="brand" href="https://www.surfx-protocol.com/#/" aria-label="SurfX home"><span class="brand-mark">∿</span><span>Surf<span class="brand-x">X</span></span></a>
-      <nav class="desktop-nav" :aria-label="lang === 'ko' ? '주 메뉴' : 'Main navigation'">
-        <button @click="goTo('about')">{{ t.nav[0] }}</button>
-        <button @click="goTo('experience')">{{ t.nav[1] }}</button>
-        <button @click="goTo('preview')">{{ t.nav[2] }}</button>
-        <a href="#/whitepaper" @click="syncRoute">{{ t.nav[3] }}</a>
-      </nav>
-      <div class="header-actions">
-        <div class="language-switch" :aria-label="lang === 'ko' ? '언어 선택' : 'Choose language'">
-          <button :class="{ active: lang === 'ko' }" @click="changeLanguage('ko')" :aria-pressed="lang === 'ko'">KR</button><span>/</span><button :class="{ active: lang === 'en' }" @click="changeLanguage('en')" :aria-pressed="lang === 'en'">EN</button>
-        </div>
-        <button class="menu-toggle" @click="menuOpen = !menuOpen" :aria-expanded="menuOpen" :aria-label="lang === 'ko' ? '메뉴 열기' : 'Open menu'">{{ menuOpen ? '✕' : '☰' }}</button>
+  <div class="docs-shell">
+    <header class="docs-header">
+      <button class="menu-button" type="button" :aria-label="lang === 'ko' ? '목차 열기' : 'Open navigation'" @click="menuOpen = !menuOpen">☰</button>
+      <a class="docs-brand" href="#/intro" @click.prevent="navigate('intro')"><span class="brand-wave">∿</span><span>Surf<span class="brand-accent">X</span></span><span class="brand-divider"></span><span class="brand-document">Whitepaper</span></a>
+      <div class="header-tools">
+        <button class="search-trigger" type="button" @click="openSearch"><span class="search-icon">⌕</span><span>{{ lang === 'ko' ? '백서 검색' : 'Search documentation' }}</span><kbd>Ctrl K</kbd></button>
+        <div class="language-switch" :aria-label="lang === 'ko' ? '언어 선택' : 'Choose language'"><button type="button" :class="{ active: lang === 'ko' }" :aria-pressed="lang === 'ko'" @click="changeLanguage('ko')">KO</button><span>/</span><button type="button" :class="{ active: lang === 'en' }" :aria-pressed="lang === 'en'" @click="changeLanguage('en')">EN</button></div>
+        <a class="main-site-link" href="https://www.surfx-protocol.com/">{{ lang === 'ko' ? '메인 사이트' : 'Main site' }} ↗</a>
       </div>
-      <nav v-if="menuOpen" class="mobile-nav">
-        <button @click="goTo('about')">{{ t.nav[0] }}</button><button @click="goTo('experience')">{{ t.nav[1] }}</button><button @click="goTo('preview')">{{ t.nav[2] }}</button><a href="#/whitepaper" @click="syncRoute">{{ t.nav[3] }}</a>
-      </nav>
     </header>
 
-    <main v-if="route === 'home'">
-      <section class="hero" id="top">
-        <div class="hero-glow"></div>
-        <div class="hero-content container">
-          <div class="hero-copy">
-            <p class="eyebrow"><span class="eyebrow-line"></span>{{ t.eyebrow }}</p>
-            <h1>{{ t.hero1 }}<br><em>{{ t.hero2 }}</em></h1>
-            <p class="hero-body">{{ t.heroBody }}</p>
-            <div class="button-row"><button class="btn btn-primary" @click="goTo('about')">{{ t.heroCta }} <span>↗</span></button><a class="btn btn-text" href="#/whitepaper" @click="syncRoute">{{ t.paperCta }} <span>↗</span></a></div>
+    <div v-if="menuOpen" class="mobile-shade" @click="menuOpen = false"></div>
+    <aside ref="sidebar" class="docs-sidebar" :class="{ open: menuOpen }" :aria-label="lang === 'ko' ? '백서 목차' : 'Whitepaper navigation'">
+      <div class="sidebar-inner">
+        <p class="sidebar-caption">SURFX DOCUMENTATION</p>
+        <button class="nav-intro" type="button" :class="{ selected: pageId === 'intro' }" @click="navigate('intro')"><span class="nav-icon">⌂</span>{{ lang === 'ko' ? '소개' : 'Introduction' }}</button>
+        <section v-for="group in groups" :key="group.id" class="nav-group">
+          <h2><span class="nav-icon">{{ group.icon }}</span>{{ lang === 'ko' ? group.ko : group.en }}</h2>
+          <button v-for="number in group.chapters" :key="number" type="button" :class="{ selected: pageId === source.chapters[number - 1].id }" @click="navigate(source.chapters[number - 1].id)"><span class="chapter-number">{{ String(number).padStart(2, '0') }}</span><span>{{ lang === 'ko' ? cleanTitle(source.chapters[number - 1]) : chapterMeta[number - 1].en }}</span></button>
+        </section>
+        <a class="source-download" :href="asset('SurfX_Whitepaper_KO_v0_2.docx')" download>↓ {{ lang === 'ko' ? '원본 백서 다운로드' : 'Download Korean source' }}</a>
+      </div>
+    </aside>
+
+    <div class="docs-content-grid">
+      <main class="docs-main" id="main-content">
+        <div class="breadcrumb"><span>{{ currentGroup ? (lang === 'ko' ? currentGroup.ko : currentGroup.en) : (lang === 'ko' ? '개요' : 'OVERVIEW') }}</span><span class="breadcrumb-slash">/</span><span>{{ pageTitle }}</span></div>
+
+        <article v-if="!currentChapter" class="article">
+          <div class="article-heading"><p class="article-kicker">SURFX WHITEPAPER · V0.2</p><h1>{{ pageTitle }}</h1><p class="article-lede">{{ lang === 'ko' ? 'SurfX 생태계와 공용 토큰의 설계, 운영 원칙과 단계별 계획' : 'The ecosystem, shared token design, operating principles, and phased plan for SurfX.' }}</p></div>
+          <div class="cover-art"><div><span>THE NEXT WAVE OF CONNECTED EXPERIENCES</span><strong>SurfX<br>Whitepaper</strong><small>October 2026 · Version 0.2</small></div><img :src="asset('wave.webp')" alt="" /></div>
+          <div class="document-notice"><strong>{{ lang === 'ko' ? '발행 준비 기준안' : 'Planning baseline' }}</strong><p>{{ lang === 'ko' ? '이 문서는 토큰 발행이나 서비스 출시가 완료되었다는 뜻이 아닙니다. 실제 배포와 운영 정보는 별도로 확인해야 합니다.' : 'This document does not state that token issuance or service launches are complete. Deployment and operating details require separate confirmation.' }}</p></div>
+          <section class="intro-copy"><h2>{{ lang === 'ko' ? '프로젝트 개요' : 'Project overview' }}</h2><p v-for="paragraph in (lang === 'ko' ? source.introduction : englishIntro)" :key="paragraph">{{ paragraph }}</p></section>
+          <div class="intro-highlights"><div><span>25</span><small>{{ lang === 'ko' ? '개 장' : 'Chapters' }}</small></div><div><span>14</span><small>{{ lang === 'ko' ? '개 표' : 'Source tables' }}</small></div><div><span>v0.2</span><small>{{ lang === 'ko' ? '운영 정책 반영본' : 'Planning draft' }}</small></div></div>
+          <button class="next-card" type="button" @click="navigate('chapter-01')"><small>{{ lang === 'ko' ? '다음 장' : 'NEXT' }}</small><strong>{{ lang === 'ko' ? '프로젝트 개요' : 'Project Overview' }} →</strong></button>
+        </article>
+
+        <article v-else class="article chapter-article">
+          <div class="article-heading"><p class="article-kicker">CHAPTER {{ String(currentIndex + 1).padStart(2, '0') }} / 25</p><h1>{{ pageTitle }}</h1><p v-if="lang === 'en'" class="original-title">{{ currentChapter.title }}</p></div>
+          <div v-if="lang === 'en'" class="english-summary"><span>CHAPTER GUIDE</span><p>{{ currentMeta.summary }}</p></div>
+          <div v-if="lang === 'en'" class="source-label"><span>ORIGINAL KOREAN TEXT</span><p>The full source follows in Korean. The English guide above summarizes the chapter and does not replace the original wording.</p></div>
+          <div class="chapter-blocks">
+            <template v-for="(block, index) in currentChapter.blocks" :key="index">
+              <h2 v-if="block.type === 'heading'" :id="'section-' + index">{{ block.text }}</h2>
+              <div v-else-if="block.type === 'table'" class="table-scroll"><table><thead><tr><th v-for="(cell, cellIndex) in block.rows[0]" :key="cellIndex">{{ cell }}</th></tr></thead><tbody><tr v-for="(row, rowIndex) in block.rows.slice(1)" :key="rowIndex"><td v-for="(cell, cellIndex) in row" :key="cellIndex">{{ cell }}</td></tr></tbody></table></div>
+              <p v-else-if="isExternalLink(block.text)" class="reference-link"><a :href="block.text" target="_blank" rel="noopener noreferrer">{{ block.text }} ↗</a></p>
+              <p v-else>{{ block.text }}</p>
+            </template>
           </div>
-          <div class="hero-art" aria-hidden="true"><div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div><img :src="asset('wave.webp')" alt=""><span class="art-glint glint-one">✳</span><span class="art-glint glint-two">✦</span></div>
-        </div>
-      </section>
+          <div class="chapter-pagination"><button v-if="previousPage" type="button" @click="navigate(previousPage.id)"><small>← {{ lang === 'ko' ? '이전 장' : 'PREVIOUS' }}</small><strong>{{ lang === 'ko' ? cleanTitle(previousPage) : chapterMeta[currentIndex - 1].en }}</strong></button><button v-else type="button" @click="navigate('intro')"><small>← {{ lang === 'ko' ? '이전' : 'PREVIOUS' }}</small><strong>{{ lang === 'ko' ? '소개' : 'Introduction' }}</strong></button><button v-if="nextPage" type="button" @click="navigate(nextPage.id)"><small>{{ lang === 'ko' ? '다음 장' : 'NEXT' }} →</small><strong>{{ lang === 'ko' ? cleanTitle(nextPage) : chapterMeta[currentIndex + 1].en }}</strong></button></div>
+        </article>
 
-      <div class="ticker"><div class="ticker-inner"><template v-for="n in 2" :key="n"><span v-for="item in t.strip" :key="`${n}-${item}`">✳ &nbsp; {{ item }}</span></template></div></div>
+        <footer class="article-footer">
+          <img :src="asset('surfx-neocode-collab.png')" alt="SurfX × NEOCODE" />
+          <div class="footer-details"><strong>NEOCODE</strong><span>Representative: Eunseong Park · Business Registration No. 422-29-01059</span><span>E-Commerce Registration No. 2025-Seoul Guro-0315 · D-U-N-S No. 963437563</span><span>Suite 702, 36, Gyeongin-ro 20na-gil, Guro-gu, Seoul, Republic of Korea</span><span>Customer Support: <a href="tel:+821086741663">010-8674-1663</a></span></div>
+          <div class="footer-bottom"><span>© 2026 SurfX × NEOCODE</span><a href="https://www.surfx-protocol.com/">{{ lang === 'ko' ? 'SurfX 메인 사이트' : 'SurfX main site' }} ↗</a></div>
+        </footer>
+      </main>
 
-      <section class="about section-pad container" id="about">
-        <div class="section-heading"><p class="kicker">{{ t.aboutKicker }}</p><h2 class="multiline">{{ t.aboutTitle }}</h2><p>{{ t.aboutBody }}</p></div>
-        <div class="step-grid"><article v-for="step in t.steps" :key="step.n" class="step-card"><div class="step-top"><span>{{ step.n }} / 03</span><span class="step-icon">{{ step.icon }}</span></div><div><h3>{{ step.title }}</h3><p>{{ step.body }}</p></div></article></div>
-      </section>
+      <aside class="on-this-page" :aria-label="lang === 'ko' ? '이 페이지에서' : 'On this page'"><div><h2>{{ lang === 'ko' ? '이 페이지에서' : 'ON THIS PAGE' }}</h2><template v-if="currentChapter"><button v-for="item in toc" :key="item.index" type="button" :class="{ selected: activeAnchor === 'section-' + item.index }" @click="jumpTo(item.index)">{{ item.text }}</button><span v-if="!toc.length" class="toc-empty">{{ lang === 'ko' ? '본문과 표' : 'Source text and tables' }}</span></template><template v-else><button type="button" @click="jumpToSelector('.intro-copy')">{{ lang === 'ko' ? '프로젝트 개요' : 'Project overview' }}</button><button type="button" @click="jumpToSelector('.intro-highlights')">{{ lang === 'ko' ? '문서 구성' : 'Document at a glance' }}</button></template></div></aside>
+    </div>
 
-      <section class="feature-section" id="experience"><div class="container feature-layout"><div class="feature-visual"><div class="feature-halo"></div><img :src="asset('screen-home.png')" :alt="t.screens[0]"><span class="visual-caption">DAILY SURF / 01</span></div><div class="feature-copy"><p class="kicker">{{ t.featureKicker }}</p><h2 class="multiline">{{ t.featureTitle }}</h2><p class="feature-lead">{{ t.featureBody }}</p><ul><li v-for="item in t.featureItems" :key="item"><span>✦</span>{{ item }}</li></ul><p class="fine-print">{{ t.demo }}</p></div></div></section>
-
-      <section class="preview section-pad container" id="preview"><div class="preview-heading"><div><p class="kicker">{{ t.appKicker }}</p><h2>{{ t.appTitle }}</h2></div><p>{{ t.appBody }}</p></div><div class="screen-grid"><figure v-for="(screen, i) in ['screen-home.png', 'screen-missions.png', 'screen-crew.png']" :key="screen"><div class="screen-frame"><img :src="asset(screen)" :alt="t.screens[i]" loading="lazy"></div><figcaption><span>0{{ i + 1 }}</span> {{ t.screens[i] }}</figcaption></figure></div></section>
-
-
-      <section class="closing"><div class="container closing-inner"><p class="kicker">{{ t.ctaKicker }}</p><h2 class="multiline">{{ t.ctaTitle }}</h2><p>{{ t.ctaBody }}</p><a class="btn btn-primary" href="#/whitepaper" @click="syncRoute">{{ t.paperCta }} <span>↗</span></a><div class="closing-wave" aria-hidden="true">∿</div></div></section>
-    </main>
-
-    <main v-else class="paper-main"><div class="container paper-intro"><p class="kicker">{{ t.paper.label }}</p><h1>{{ t.paper.title }}</h1><p>{{ t.paper.intro }}</p></div><div class="container paper-layout"><aside class="paper-sidebar"><span class="sidebar-title">CONTENTS</span><button v-for="section in t.paper.sections" :key="section.id" @click="scrollPaper(section.id)">{{ section.title }}</button></aside><div class="paper-articles"><section v-for="section in t.paper.sections" :id="section.id" :key="section.id"><h2>{{ section.title }}</h2><p v-for="paragraph in section.paragraphs" :key="paragraph">{{ paragraph }}</p></section><a class="repo-link" href="https://github.com/neocodekr/SurfX" target="_blank" rel="noopener noreferrer">GitHub repository ↗</a></div></div></main>
-
-    <footer class="footer">
-      <div class="container footer-partnership">
-        <img class="footer-collab-logo" :src="asset('surfx-neocode-collab.png')" alt="SurfX × NEOCODE" />
-      </div>
-      <div class="container footer-company-grid">
-        <section><span class="footer-label">COMPANY</span><h2>NEOCODE</h2><p>Representative: Eunseong Park</p></section>
-        <section><span class="footer-label">REGISTRATION</span><p>Business Registration No. 422-29-01059</p><p>E-Commerce Registration No. 2025-Seoul Guro-0315</p><p>D-U-N-S No. 963437563</p></section>
-        <section><span class="footer-label">CONTACT</span><address>Suite 702, 36, Gyeongin-ro 20na-gil,<br>Guro-gu, Seoul, Republic of Korea</address><p>Customer Support: <a href="tel:+821086741663">010-8674-1663</a></p></section>
-      </div>
-      <div class="container footer-bottom"><span>© 2026 SurfX × NEOCODE. All rights reserved.</span><div class="footer-links"><button @click="goTo('about')">{{ t.nav[0] }}</button><button @click="goTo('experience')">{{ t.nav[1] }}</button><a href="#/whitepaper" @click="syncRoute">{{ t.nav[3] }}</a><a href="https://github.com/neocodekr/SurfX" target="_blank" rel="noopener noreferrer">GitHub ↗</a><button @click="scrollPaper('overview')">{{ t.top }} ↑</button></div></div>
-    </footer>
+    <div v-if="searchOpen" class="search-overlay" @click.self="searchOpen = false"><div class="search-dialog" role="dialog" aria-modal="true" :aria-label="lang === 'ko' ? '백서 검색' : 'Search whitepaper'"><div class="search-input-row"><span>⌕</span><input ref="searchInput" v-model="searchQuery" :placeholder="lang === 'ko' ? '제목과 본문 검색…' : 'Search titles and content…'" @keydown.enter="searchResults[0] && navigate(searchResults[0].id)" /><button type="button" @click="searchOpen = false">Esc</button></div><div class="search-results"><p v-if="!searchQuery" class="search-hint">{{ lang === 'ko' ? '장 제목과 백서 본문을 검색할 수 있습니다.' : 'Search all chapters and the original source text.' }}</p><p v-else-if="!searchResults.length" class="search-hint">{{ lang === 'ko' ? '검색 결과가 없습니다.' : 'No results found.' }}</p><button v-for="result in searchResults" :key="result.id" type="button" @click="navigate(result.id)"><span>{{ lang === 'ko' ? result.title : result.englishTitle }}</span><small>{{ lang === 'ko' ? result.blocks.find((block) => block.type === 'paragraph')?.text.slice(0, 110) : result.summary.slice(0, 110) }}…</small></button></div></div></div>
   </div>
 </template>
